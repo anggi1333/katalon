@@ -1,0 +1,1694 @@
+1
+00:00:00,001 --> 00:00:00,001
+3. Buka Browser
+
+
+2
+00:00:09,804 --> 00:00:09,804
+9. Maksimal Windows
+
+
+3
+00:00:11,943 --> 00:00:11,944
+13. setText(findTestObject("All/UserName"), "anggi1")
+
+4
+00:00:12,498 --> 00:00:12,499
+17. setEncryptedText(findTestObject("All/password"), "iFGeFYmXIrWy72D5I5E8Dw==")
+
+5
+00:00:12,997 --> 00:00:12,998
+21. click(findTestObject("All/Sign In"))
+
+6
+00:00:16,195 --> 00:00:16,196
+25. delay(3)
+
+7
+00:00:19,197 --> 00:00:19,197
+29. setText(findTestObject("All/filter"), "Report")
+
+8
+00:00:19,635 --> 00:00:19,635
+33. delay(1)
+
+9
+00:00:20,637 --> 00:00:20,637
+37. scrollToElement(findTestObject("GoAmlReport/View"), 3)
+
+10
+00:00:20,943 --> 00:00:20,943
+41. click(findTestObject("GoAmlReport/View"))
+
+11
+00:00:21,364 --> 00:00:21,364
+45. delay(3)
+
+12
+00:00:24,367 --> 00:00:24,367
+49. click(findTestObject("All/New Record"))
+
+13
+00:00:24,985 --> 00:00:24,986
+53. callTestCase(findTestCase("GoAML Report 2"), [:], STOP_ON_FAILURE)
+
+14
+00:00:25,067 --> 00:00:25,067
+1. for ([rowNum = 1, rowNum <= findTestData("GoAMLReport/General Information").getRowNumbers(), (rowNum++)])
+
+15
+00:00:25,129 --> 00:00:25,129
+1. delay(90)
+
+16
+00:01:55,131 --> 00:01:55,132
+5. click(findTestObject("GoAmlReport/01 General Information/01 Jenis Laporan"), STOP_ON_FAILURE)
+
+17
+00:01:56,134 --> 00:01:56,135
+9. delay(20)
+
+18
+00:02:16,136 --> 00:02:16,137
+13. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LAPT - LTKM")
+
+19
+00:02:16,156 --> 00:02:16,156
+17. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKM - LTKM")
+
+20
+00:02:16,178 --> 00:02:16,181
+1. click(findTestObject("GoAmlReport/01 General Information/Isi Jenis Laporan/2 LTKM - LTKM"))
+
+21
+00:02:16,833 --> 00:02:16,833
+5. if (findTestData("GoAMLReport/General Information").getValue(4, rowNum) == "CaseManagement ID")
+
+22
+00:02:16,858 --> 00:02:16,858
+1. setText(findTestObject("GoAmlReport/01 General Information/05 Type Report"), "transaksi unik")
+
+23
+00:02:17,889 --> 00:02:17,889
+5. delay(10)
+
+24
+00:02:27,892 --> 00:02:27,892
+9. sendKeys(findTestObject("GoAmlReport/01 General Information/05 Type Report"), Keys.chord(ENTER))
+
+25
+00:02:28,339 --> 00:02:28,340
+9. if (findTestData("GoAMLReport/General Information").getValue(4, rowNum) == "CIF")
+
+26
+00:02:28,359 --> 00:02:28,360
+21. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKMH - LTKM")
+
+27
+00:02:28,376 --> 00:02:28,376
+25. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKMP - LTKM")
+
+28
+00:02:28,399 --> 00:02:28,399
+29. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKMT - LTKM")
+
+29
+00:02:28,443 --> 00:02:28,443
+33. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKTK - LTKT")
+
+30
+00:02:28,461 --> 00:02:28,461
+37. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "LTKTM - LTKT")
+
+31
+00:02:28,520 --> 00:02:28,520
+41. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "TKLIB - LTKL")
+
+32
+00:02:28,543 --> 00:02:28,567
+45. if (findTestData("GoAMLReport/General Information").getValue(1, rowNum) == "TKLOB - LTKL")
+
+33
+00:02:28,622 --> 00:02:28,623
+49. setText(findTestObject("GoAmlReport/01 General Information/02 Tgl Laporan"), findTestData("GoAMLReport/General Information").getValue(3, 1))
+
+34
+00:02:29,392 --> 00:02:29,392
+53. setText(findTestObject("GoAmlReport/01 General Information/03 Alasan"), "No Reason")
+
+35
+00:02:30,133 --> 00:02:30,133
+57. setText(findTestObject("GoAmlReport/01 General Information/04 Tidakan Pelapor"), "Tidak Bertindak")
+
+36
+00:02:30,729 --> 00:02:30,729
+61. setText(findTestObject("GoAmlReport/01 General Information/06 No Value Report"), "Testing Anggi 2906")
+
+37
+00:02:31,610 --> 00:02:31,610
+65. if (findTestData("GoAMLReport/General Information").getValue(6, rowNum) == "true")
+
+38
+00:02:31,633 --> 00:02:31,633
+1. click(findTestObject("GoAmlReport/Indikator"))
+
+39
+00:02:32,448 --> 00:02:32,448
+5. delay(5)
+
+40
+00:02:37,451 --> 00:02:37,451
+9. setText(findTestObject("GoAmlReport/Indikator 2"), findTestData("GoAMLReport/General Information").getValue(7, rowNum))
+
+41
+00:02:38,153 --> 00:02:38,153
+13. delay(3)
+
+42
+00:02:41,155 --> 00:02:41,155
+17. sendKeys(findTestObject("GoAmlReport/Indikator 2"), Keys.chord(ENTER))
+
+43
+00:02:41,576 --> 00:02:41,576
+21. delay(2)
+
+44
+00:02:43,579 --> 00:02:43,579
+25. click(findTestObject("GoAmlReport/save indikator"))
+
+45
+00:02:44,084 --> 00:02:44,085
+57. callTestCase(findTestCase("GoAML Report 3"), [:], STOP_ON_FAILURE)
+
+46
+00:02:44,148 --> 00:02:44,148
+1. for ([rowNum = 1, rowNum <= findTestData("GoAMLReport/Transaksi").getRowNumbers(), (rowNum++)])
+
+47
+00:02:44,166 --> 00:02:44,166
+1. delay(6)
+
+48
+00:02:50,170 --> 00:02:50,170
+5. if (findTestData("GoAMLReport/Transaksi").getValue(1, rowNum) == "true")
+
+49
+00:02:50,189 --> 00:02:50,189
+1. click(findTestObject("GoAmlReport/01 General Information/07 Tambah Transaksi"))
+
+50
+00:02:50,711 --> 00:02:50,711
+5. delay(6)
+
+51
+00:02:56,712 --> 00:02:56,712
+9. setText(findTestObject("GoAmlReport/Nomor Transaksi"), findTestData("GoAMLReport/Transaksi").getValue(12, rowNum))
+
+52
+00:02:57,388 --> 00:02:57,388
+13. setText(findTestObject("GoAmlReport/02 Transaksi/01 No Ref Transaksi"), "12133746")
+
+53
+00:02:58,068 --> 00:02:58,068
+17. setText(findTestObject("GoAmlReport/02 Transaksi/02 Lokasi Transaksi"), "Jakarta")
+
+54
+00:02:58,798 --> 00:02:58,798
+21. setText(findTestObject("GoAmlReport/02 Transaksi/03 Keterangan Transaksi"), "Noted")
+
+55
+00:02:59,444 --> 00:02:59,445
+25. setText(findTestObject("GoAmlReport/02 Transaksi/04 Tgl Transaksi"), findTestData("GoAMLReport/Transaksi").getValue(2, rowNum))
+
+56
+00:03:00,202 --> 00:03:00,202
+29. setText(findTestObject("GoAmlReport/02 Transaksi/05 Nama Teller"), "Miss Teller")
+
+57
+00:03:00,959 --> 00:03:00,959
+33. setText(findTestObject("GoAmlReport/02 Transaksi/06 Nama Pejabat"), "Mr Pejabat")
+
+58
+00:03:01,703 --> 00:03:01,704
+37. setText(findTestObject("GoAmlReport/02 Transaksi/07 Tgl Pembukuan"), "01-May-20")
+
+59
+00:03:02,422 --> 00:03:02,422
+41. delay(3)
+
+60
+00:03:05,424 --> 00:03:05,424
+45. sendKeys(findTestObject("GoAmlReport/02 Transaksi/07 Tgl Pembukuan"), Keys.chord(ENTER))
+
+61
+00:03:05,822 --> 00:03:05,823
+49. scrollToElement(findTestObject("GoAmlReport/02 Transaksi/08 Cara Trx Dilakukan"), 3)
+
+62
+00:03:06,214 --> 00:03:06,215
+53. setText(findTestObject("GoAmlReport/02 Transaksi/08 Cara Trx Dilakukan"), findTestData("GoAMLReport/Transaksi").getValue(3, rowNum))
+
+63
+00:03:07,141 --> 00:03:07,142
+57. delay(3)
+
+64
+00:03:10,144 --> 00:03:10,144
+61. sendKeys(findTestObject("GoAmlReport/02 Transaksi/08 Cara Trx Dilakukan"), Keys.chord(ENTER))
+
+65
+00:03:10,732 --> 00:03:10,733
+65. scrollToElement(findTestObject("GoAmlReport/02 Transaksi/09 Cara Trx Lain"), 3)
+
+66
+00:03:11,123 --> 00:03:11,123
+69. setText(findTestObject("GoAmlReport/02 Transaksi/09 Cara Trx Lain"), "Tidak-Ada")
+
+67
+00:03:11,823 --> 00:03:11,824
+73. scrollToElement(findTestObject("GoAmlReport/02 Transaksi/10 Nilai Trx (IDR)"), 3)
+
+68
+00:03:12,234 --> 00:03:12,234
+77. setText(findTestObject("GoAmlReport/02 Transaksi/10 Nilai Trx (IDR)"), findTestData("GoAMLReport/Transaksi").getValue(4, rowNum))
+
+69
+00:03:12,933 --> 00:03:12,934
+81. setText(findTestObject("GoAmlReport/02 Transaksi/11 Type Trx"), findTestData("GoAMLReport/Transaksi").getValue(5, rowNum))
+
+70
+00:03:13,630 --> 00:03:13,631
+85. delay(3)
+
+71
+00:03:16,632 --> 00:03:16,632
+89. sendKeys(findTestObject("GoAmlReport/02 Transaksi/11 Type Trx"), Keys.chord(ENTER))
+
+72
+00:03:17,174 --> 00:03:17,174
+61. callTestCase(findTestCase("Identitas Orang Mewakili Transaksi"), [:], STOP_ON_FAILURE)
+
+73
+00:03:17,251 --> 00:03:17,252
+1. for ([rowNum = 1, rowNum <= findTestData("GoAMLReport/Transaksi").getRowNumbers(), (rowNum++)])
+
+74
+00:03:17,294 --> 00:03:17,295
+1. delay(6)
+
+75
+00:03:23,297 --> 00:03:23,297
+5. if (findTestData("GoAMLReport/Transaksi").getValue(13, rowNum) == "true")
+
+76
+00:03:23,319 --> 00:03:23,319
+1. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/01 Yes"))
+
+77
+00:03:23,913 --> 00:03:23,913
+5. delay(8)
+
+78
+00:03:31,915 --> 00:03:31,915
+9. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/02 Jenis Kelamin"), "F - Female")
+
+79
+00:03:32,702 --> 00:03:32,703
+13. delay(3)
+
+80
+00:03:35,705 --> 00:03:35,705
+17. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/02 Jenis Kelamin"), Keys.chord(ENTER))
+
+81
+00:03:36,139 --> 00:03:36,140
+21. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/03 Gelar"), "Missfortune")
+
+82
+00:03:36,882 --> 00:03:36,883
+25. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/04 Nama Lengkap"), "Anggi Firmansah")
+
+83
+00:03:37,747 --> 00:03:37,748
+29. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/05 Tanggl Lahir"), "13-Mar-93")
+
+84
+00:03:38,538 --> 00:03:38,538
+33. delay(3)
+
+85
+00:03:41,541 --> 00:03:41,541
+37. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/05 Tanggl Lahir"), Keys.chord(ENTER))
+
+86
+00:03:41,960 --> 00:03:41,960
+41. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/06 Tempat Lahir"), "Jakarta")
+
+87
+00:03:42,648 --> 00:03:42,648
+45. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/07 Nama Ibu Kandung"), "Ibu")
+
+88
+00:03:43,208 --> 00:03:43,208
+49. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/09 NIK"), "31333")
+
+89
+00:03:43,804 --> 00:03:43,804
+53. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/10 No Passpor"), "123444")
+
+90
+00:03:44,449 --> 00:03:44,450
+57. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/11 Negara Penerbit Paspor"), "Indonesia")
+
+91
+00:03:45,291 --> 00:03:45,292
+61. delay(3)
+
+92
+00:03:48,295 --> 00:03:48,296
+65. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/11 Negara Penerbit Paspor"), Keys.chord(ENTER))
+
+93
+00:03:48,733 --> 00:03:48,734
+69. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/01/12 No Identitas Lain"), "555555555")
+
+94
+00:03:49,398 --> 00:03:49,399
+73. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/01 Kwrg 1"), "ID - INDONESIA")
+
+95
+00:03:50,216 --> 00:03:50,217
+77. delay(3)
+
+96
+00:03:53,219 --> 00:03:53,219
+81. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/01 Kwrg 1"), Keys.chord(ENTER))
+
+97
+00:03:53,634 --> 00:03:53,634
+85. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/02 Kwrg 2"), "ID - INDONESIA")
+
+98
+00:03:54,561 --> 00:03:54,562
+89. delay(3)
+
+99
+00:03:57,563 --> 00:03:57,563
+93. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/02 Kwrg 2"), Keys.chord(ENTER))
+
+100
+00:03:57,992 --> 00:03:57,992
+97. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/03 Kwrg 3"), "ID - INDONESIA")
+
+101
+00:03:58,806 --> 00:03:58,807
+101. delay(3)
+
+102
+00:04:01,810 --> 00:04:01,810
+105. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/03 Kwrg 3"), Keys.chord(ENTER))
+
+103
+00:04:02,236 --> 00:04:02,236
+109. delay(3)
+
+104
+00:04:05,239 --> 00:04:05,239
+113. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/04 Negara Domisili"), "ID - INDONESIA")
+
+105
+00:04:06,110 --> 00:04:06,111
+117. delay(3)
+
+106
+00:04:09,112 --> 00:04:09,113
+121. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/04 Negara Domisili"), Keys.chord(ENTER))
+
+107
+00:04:09,610 --> 00:04:09,610
+125. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/10 Pekerjaa"), 3)
+
+108
+00:04:10,013 --> 00:04:10,013
+129. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/10 Pekerjaa"), "IT IT an")
+
+109
+00:04:10,687 --> 00:04:10,688
+133. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/11 Tempat Bekerja"), 3)
+
+110
+00:04:11,103 --> 00:04:11,103
+137. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/04/11 Tempat Bekerja"), "JAKARTA")
+
+111
+00:04:11,774 --> 00:04:11,774
+141. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/10 Sumber Dana"), "Maling")
+
+112
+00:04:12,427 --> 00:04:12,428
+145. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/11 Catatan"), "tydacc addacc")
+
+113
+00:04:13,161 --> 00:04:13,161
+149. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/01 Add"), 3)
+
+114
+00:04:13,569 --> 00:04:13,569
+153. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/01 Add"))
+
+115
+00:04:14,066 --> 00:04:14,067
+157. delay(5)
+
+116
+00:04:19,080 --> 00:04:19,080
+161. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/02 Kategori Kontak"), "D - Domisili")
+
+117
+00:04:19,812 --> 00:04:19,813
+165. delay(3)
+
+118
+00:04:22,816 --> 00:04:22,816
+169. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/02 Kategori Kontak"), Keys.chord(ENTER))
+
+119
+00:04:23,229 --> 00:04:23,230
+173. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/03 Alat Komunikasi"), "PSTN - PSTN")
+
+120
+00:04:23,941 --> 00:04:23,942
+177. delay(3)
+
+121
+00:04:26,944 --> 00:04:26,945
+181. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/03 Alat Komunikasi"), Keys.chord(ENTER))
+
+122
+00:04:27,360 --> 00:04:27,360
+185. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/05 Nomor Telepon"), "0986745632")
+
+123
+00:04:28,046 --> 00:04:28,046
+189. delay(2)
+
+124
+00:04:30,049 --> 00:04:30,049
+193. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/08 Save"), 3)
+
+125
+00:04:30,530 --> 00:04:30,530
+197. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/02/08 Save"))
+
+126
+00:04:31,073 --> 00:04:31,074
+201. delay(5)
+
+127
+00:04:36,076 --> 00:04:36,076
+205. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/01 Add"), 3)
+
+128
+00:04:36,503 --> 00:04:36,504
+209. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/01 Add"))
+
+129
+00:04:36,991 --> 00:04:36,992
+213. delay(5)
+
+130
+00:04:41,994 --> 00:04:41,994
+217. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/02 Tipe Alamat"), "D - Domisili")
+
+131
+00:04:42,768 --> 00:04:42,769
+221. delay(5)
+
+132
+00:04:47,770 --> 00:04:47,770
+225. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/02 Tipe Alamat"), Keys.chord(ENTER))
+
+133
+00:04:48,202 --> 00:04:48,203
+229. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/03 Alamat"), "Jl. sdhjsadkjsnadklsandkjasd")
+
+134
+00:04:48,875 --> 00:04:48,875
+233. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/05 Kota"), "Jakarta")
+
+135
+00:04:49,501 --> 00:04:49,502
+237. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/07 Negara"), "ID - INDONESIA")
+
+136
+00:04:50,313 --> 00:04:50,314
+241. delay(3)
+
+137
+00:04:53,316 --> 00:04:53,316
+245. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/07 Negara"), Keys.chord(ENTER))
+
+138
+00:04:53,751 --> 00:04:53,752
+249. delay(2)
+
+139
+00:04:55,753 --> 00:04:55,753
+253. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/03/10 Save"))
+
+140
+00:04:56,251 --> 00:04:56,252
+257. delay(2)
+
+141
+00:04:58,254 --> 00:04:58,254
+261. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/01 Add"), 3)
+
+142
+00:04:58,655 --> 00:04:58,655
+265. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/01 Add"))
+
+143
+00:04:59,140 --> 00:04:59,140
+269. delay(5)
+
+144
+00:05:04,143 --> 00:05:04,143
+273. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/02 Tipe Alamat"), "K - Kantor")
+
+145
+00:05:04,852 --> 00:05:04,852
+277. delay(3)
+
+146
+00:05:07,854 --> 00:05:07,854
+281. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/02 Tipe Alamat"), Keys.chord(ENTER))
+
+147
+00:05:08,317 --> 00:05:08,318
+285. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/03 Alamat"), "Tangerang")
+
+148
+00:05:08,973 --> 00:05:08,973
+289. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/05 Kota"), "Tgrng")
+
+149
+00:05:09,626 --> 00:05:09,627
+293. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/07 Negara"), "ID - INDONESIA")
+
+150
+00:05:10,526 --> 00:05:10,527
+297. delay(3)
+
+151
+00:05:13,529 --> 00:05:13,529
+301. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/07 Negara"), Keys.chord(ENTER))
+
+152
+00:05:13,944 --> 00:05:13,945
+305. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/05/10 Save"))
+
+153
+00:05:14,441 --> 00:05:14,442
+309. delay(3)
+
+154
+00:05:17,444 --> 00:05:17,444
+313. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/01 Add"), 3)
+
+155
+00:05:17,899 --> 00:05:17,899
+317. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/01 Add"))
+
+156
+00:05:18,374 --> 00:05:18,374
+321. delay(3)
+
+157
+00:05:21,376 --> 00:05:21,376
+325. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/02 Kategori Kontak"), "R - Rumah")
+
+158
+00:05:22,247 --> 00:05:22,248
+329. delay(3)
+
+159
+00:05:25,250 --> 00:05:25,250
+333. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/02 Kategori Kontak"), Keys.chord(ENTER))
+
+160
+00:05:25,677 --> 00:05:25,678
+337. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/03 Alat Komunikasi"), "MOB - Mobile")
+
+161
+00:05:26,422 --> 00:05:26,423
+341. delay(3)
+
+162
+00:05:29,424 --> 00:05:29,424
+345. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/03 Alat Komunikasi"), Keys.chord(ENTER))
+
+163
+00:05:29,851 --> 00:05:29,852
+349. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/04 Nomor Telepon"), "089234789233")
+
+164
+00:05:30,798 --> 00:05:30,798
+353. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/06/07 Save"), STOP_ON_FAILURE)
+
+165
+00:05:31,301 --> 00:05:31,301
+357. delay(3)
+
+166
+00:05:34,303 --> 00:05:34,303
+361. scrollToElement(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/01 Add"), 3)
+
+167
+00:05:34,704 --> 00:05:34,705
+365. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/01 Add"))
+
+168
+00:05:35,207 --> 00:05:35,208
+369. delay(3)
+
+169
+00:05:38,210 --> 00:05:38,210
+373. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/02 Jenis Dokumen Identitas"), "SUKET - Surat Keterangan Kependudukan")
+
+170
+00:05:39,437 --> 00:05:39,438
+377. delay(3)
+
+171
+00:05:42,440 --> 00:05:42,440
+381. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/02 Jenis Dokumen Identitas"), Keys.chord(ENTER))
+
+172
+00:05:42,889 --> 00:05:42,890
+385. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/02 No Identitas"), "12321444")
+
+173
+00:05:43,579 --> 00:05:43,579
+389. setText(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/06 Negara Penerbit Identitas"), "ID - INDONESIA")
+
+174
+00:05:44,393 --> 00:05:44,393
+393. delay(3)
+
+175
+00:05:47,395 --> 00:05:47,395
+397. sendKeys(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/06 Negara Penerbit Identitas"), Keys.chord(ENTER))
+
+176
+00:05:47,832 --> 00:05:47,833
+401. click(findTestObject("GoAmlReport/08 Identitas Orang Mewakili Transaksi/07/08 Save"), STOP_ON_FAILURE)
+
+177
+00:05:48,486 --> 00:05:48,487
+65. callTestCase(findTestCase("GoAML Report 4"), [:], STOP_ON_FAILURE)
+
+178
+00:05:48,663 --> 00:05:48,664
+1. for ([rowNum = 1, rowNum <= findTestData("GoAMLReport/Transaksi").getRowNumbers(), (rowNum++)])
+
+179
+00:05:48,713 --> 00:05:48,713
+1. delay(6)
+
+180
+00:05:54,715 --> 00:05:54,715
+5. if (findTestData("GoAMLReport/Transaksi").getValue(1, rowNum) == "true")
+
+181
+00:05:54,727 --> 00:05:54,727
+1. if (findTestData("GoAMLReport/Transaksi").getValue(6, rowNum) == "true")
+
+182
+00:05:54,742 --> 00:05:54,743
+5. if (findTestData("GoAMLReport/Transaksi").getValue(7, rowNum) == "uang tunai")
+
+183
+00:05:54,767 --> 00:05:54,767
+1. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/02 Ins Trx Asal"), "Uang Tunai")
+
+184
+00:05:55,516 --> 00:05:55,516
+5. delay(3)
+
+185
+00:05:58,519 --> 00:05:58,519
+9. sendKeys(findTestObject("GoAmlReport/03 Identitas Pengirim/02 Ins Trx Asal"), Keys.chord(ENTER))
+
+186
+00:05:58,992 --> 00:05:58,993
+9. if (findTestData("GoAMLReport/Transaksi").getValue(7, rowNum) == "rekening")
+
+187
+00:05:59,012 --> 00:05:59,013
+13. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/05 Nominal Valas"), "500000")
+
+188
+00:05:59,699 --> 00:05:59,700
+17. delay(3)
+
+189
+00:06:02,702 --> 00:06:02,702
+21. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/06 Kurs"), "nope")
+
+190
+00:06:03,267 --> 00:06:03,268
+25. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/999 Mata Uang Asing"), "INR - Indian Rupee")
+
+191
+00:06:04,307 --> 00:06:04,308
+29. delay(3)
+
+192
+00:06:07,309 --> 00:06:07,309
+33. sendKeys(findTestObject("GoAmlReport/03 Identitas Pengirim/999 Mata Uang Asing"), Keys.chord(ENTER))
+
+193
+00:06:07,997 --> 00:06:07,997
+37. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/07 Negara Trx Asal"), "INDONE")
+
+194
+00:06:08,704 --> 00:06:08,704
+41. delay(3)
+
+195
+00:06:11,707 --> 00:06:11,707
+45. sendKeys(findTestObject("GoAmlReport/03 Identitas Pengirim/07 Negara Trx Asal"), Keys.chord(ENTER))
+
+196
+00:06:12,274 --> 00:06:12,275
+9. if (findTestData("GoAMLReport/Transaksi").getValue(8, rowNum) == "person")
+
+197
+00:06:12,293 --> 00:06:12,293
+13. if (findTestData("GoAMLReport/Transaksi").getValue(8, rowNum) == "account")
+
+198
+00:06:12,310 --> 00:06:12,311
+17. if (findTestData("GoAMLReport/Transaksi").getValue(8, rowNum) == "entity")
+
+199
+00:06:12,322 --> 00:06:12,323
+1. setText(findTestObject("GoAmlReport/03 Identitas Pengirim/09 Informasi Pengirim"), findTestData("GoAMLReport/Transaksi").getValue(8, rowNum))
+
+200
+00:06:13,139 --> 00:06:13,140
+5. delay(8)
+
+201
+00:06:21,142 --> 00:06:21,142
+9. sendKeys(findTestObject("GoAmlReport/03 Identitas Pengirim/09 Informasi Pengirim"), Keys.chord(ENTER))
+
+202
+00:06:21,609 --> 00:06:21,610
+13. delay(5)
+
+203
+00:06:26,612 --> 00:06:26,612
+17. setText(findTestObject("GoAmlReport/07 Entity/Account From/01 Nama Korporasi"), "Simpan Pinjam")
+
+204
+00:06:27,445 --> 00:06:27,445
+21. setText(findTestObject("GoAmlReport/07 Entity/Account From/02 Bentuk Korporasi"), "PD - Perusahaan Daerah")
+
+205
+00:06:28,767 --> 00:06:28,767
+25. delay(3)
+
+206
+00:06:31,770 --> 00:06:31,770
+29. sendKeys(findTestObject("GoAmlReport/07 Entity/Account From/02 Bentuk Korporasi"), Keys.chord(ENTER))
+
+207
+00:06:32,270 --> 00:06:32,271
+33. setText(findTestObject("GoAmlReport/07 Entity/Account From/03 Bidang Usaha"), "Rentenir")
+
+208
+00:06:32,981 --> 00:06:32,981
+37. setText(findTestObject("GoAmlReport/07 Entity/Account From/03 Negara"), "indone")
+
+209
+00:06:33,643 --> 00:06:33,643
+41. delay(3)
+
+210
+00:06:36,645 --> 00:06:36,645
+45. sendKeys(findTestObject("GoAmlReport/07 Entity/Account From/03 Negara"), Keys.chord(ENTER))
+
+211
+00:06:37,103 --> 00:06:37,103
+49. setText(findTestObject("GoAmlReport/07 Entity/Account From/04 NPWP"), "123213123")
+
+212
+00:06:37,843 --> 00:06:37,843
+53. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/Tambah Telepon"), 3)
+
+213
+00:06:38,316 --> 00:06:38,316
+57. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/Tambah Telepon"))
+
+214
+00:06:38,953 --> 00:06:38,953
+61. delay(5)
+
+215
+00:06:43,954 --> 00:06:43,955
+65. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/01 Kategori Kontak"), "D - Domisili")
+
+216
+00:06:44,716 --> 00:06:44,716
+69. delay(3)
+
+217
+00:06:47,718 --> 00:06:47,718
+73. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/01 Kategori Kontak"), Keys.chord(ENTER))
+
+218
+00:06:48,137 --> 00:06:48,137
+77. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/02 Alat Komunikasi"), "PSTN - PSTN")
+
+219
+00:06:49,040 --> 00:06:49,040
+81. delay(3)
+
+220
+00:06:52,043 --> 00:06:52,043
+85. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/02 Alat Komunikasi"), Keys.chord(ENTER))
+
+221
+00:06:52,469 --> 00:06:52,469
+89. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/03 No Telepon"), "0986745632")
+
+222
+00:06:53,154 --> 00:06:53,155
+93. delay(2)
+
+223
+00:06:55,157 --> 00:06:55,158
+97. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/Save"), 3)
+
+224
+00:06:55,561 --> 00:06:55,562
+101. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/01 Telepon/Save"), STOP_ON_FAILURE)
+
+225
+00:06:56,067 --> 00:06:56,067
+105. delay(3)
+
+226
+00:06:59,070 --> 00:06:59,070
+109. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/span_Tambah Alamat"), 3)
+
+227
+00:06:59,478 --> 00:06:59,479
+113. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/span_Tambah Alamat"))
+
+228
+00:06:59,964 --> 00:06:59,965
+117. delay(5)
+
+229
+00:07:04,967 --> 00:07:04,968
+121. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/01 Type Alamat"), "D - Domisili")
+
+230
+00:07:05,732 --> 00:07:05,733
+125. delay(5)
+
+231
+00:07:10,735 --> 00:07:10,735
+129. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/01 Type Alamat"), Keys.chord(ENTER))
+
+232
+00:07:11,168 --> 00:07:11,169
+133. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/02 Alamat"), "Jl. sdhjsadkjsnadklsandkjasd")
+
+233
+00:07:11,885 --> 00:07:11,885
+137. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/03 Kota"), "Jakarta")
+
+234
+00:07:12,537 --> 00:07:12,538
+141. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/03 Negara"), "ID - INDONESIA")
+
+235
+00:07:13,490 --> 00:07:13,491
+145. delay(3)
+
+236
+00:07:16,492 --> 00:07:16,492
+149. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/03 Negara"), Keys.chord(ENTER))
+
+237
+00:07:16,986 --> 00:07:16,987
+153. delay(2)
+
+238
+00:07:18,989 --> 00:07:18,989
+157. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/02 Alamat/save"))
+
+239
+00:07:19,524 --> 00:07:19,524
+161. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/00 Add"), 3)
+
+240
+00:07:20,003 --> 00:07:20,004
+165. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/00 Add"))
+
+241
+00:07:20,870 --> 00:07:20,871
+169. delay(5)
+
+242
+00:07:25,872 --> 00:07:25,872
+173. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/01 Jenis Kelamin"), "F - Female")
+
+243
+00:07:26,615 --> 00:07:26,615
+177. delay(2)
+
+244
+00:07:28,617 --> 00:07:28,617
+181. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/01 Jenis Kelamin"), Keys.chord(ENTER))
+
+245
+00:07:29,190 --> 00:07:29,190
+185. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Tanggal Lahir"), "01-Aug-96")
+
+246
+00:07:29,898 --> 00:07:29,898
+189. delay(5)
+
+247
+00:07:34,901 --> 00:07:34,902
+193. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Tanggal Lahir"), Keys.chord(ENTER))
+
+248
+00:07:35,391 --> 00:07:35,391
+197. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/12 Tempat Lahir"), "Jakarta")
+
+249
+00:07:36,126 --> 00:07:36,127
+201. delay(5)
+
+250
+00:07:41,129 --> 00:07:41,129
+205. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/01 Jenis Kelamin"), Keys.chord(ENTER))
+
+251
+00:07:41,592 --> 00:07:41,593
+209. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/02 Nama Lengkap"), "Aman ")
+
+252
+00:07:42,379 --> 00:07:42,379
+213. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/04 Kewarganegaraan"), "indone")
+
+253
+00:07:43,057 --> 00:07:43,057
+217. delay(5)
+
+254
+00:07:48,059 --> 00:07:48,059
+221. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/04 Kewarganegaraan"), Keys.chord(ENTER))
+
+255
+00:07:48,492 --> 00:07:48,493
+225. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/05 Negara Domisili"), "ID - INDONESIA")
+
+256
+00:07:49,351 --> 00:07:49,351
+229. delay(3)
+
+257
+00:07:52,353 --> 00:07:52,354
+233. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/05 Negara Domisili"), Keys.chord(ENTER))
+
+258
+00:07:52,828 --> 00:07:52,829
+237. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/06 Pekerjaan"), "Kerja Serabutan")
+
+259
+00:07:53,675 --> 00:07:53,675
+241. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/07 Sumber Dana"), "Maling")
+
+260
+00:07:54,331 --> 00:07:54,332
+245. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/08 Peran"), "UBO - Ultimate Beneficial Owner")
+
+261
+00:07:55,778 --> 00:07:55,779
+249. delay(2)
+
+262
+00:07:57,780 --> 00:07:57,780
+253. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/08 Peran"), Keys.chord(ENTER))
+
+263
+00:07:58,235 --> 00:07:58,235
+257. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/Tambah Telepon"))
+
+264
+00:07:58,792 --> 00:07:58,793
+261. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/01 Kategori Kontak"), 3)
+
+265
+00:08:00,343 --> 00:08:00,343
+265. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/01 Kategori Kontak"), "K - Kantor")
+
+266
+00:08:01,075 --> 00:08:01,076
+269. delay(3)
+
+267
+00:08:04,077 --> 00:08:04,077
+273. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/01 Kategori Kontak"), Keys.chord(ENTER))
+
+268
+00:08:04,515 --> 00:08:04,516
+277. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/02 Alat Komunikasi"), "PSTN - PSTN")
+
+269
+00:08:05,449 --> 00:08:05,450
+281. delay(3)
+
+270
+00:08:08,452 --> 00:08:08,452
+285. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/02 Alat Komunikasi"), Keys.chord(ENTER))
+
+271
+00:08:08,889 --> 00:08:08,889
+289. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/03 No Telepon"), "222222222")
+
+272
+00:08:09,637 --> 00:08:09,638
+293. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/09 Telepon/Save"), STOP_ON_FAILURE)
+
+273
+00:08:10,147 --> 00:08:10,148
+297. delay(4)
+
+274
+00:08:14,150 --> 00:08:14,150
+301. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/span_Tambah Alamat"), 3)
+
+275
+00:08:14,563 --> 00:08:14,563
+305. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/span_Tambah Alamat"))
+
+276
+00:08:15,068 --> 00:08:15,069
+309. delay(3)
+
+277
+00:08:18,071 --> 00:08:18,071
+313. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/01 Type Alamat"), "R - Rumah")
+
+278
+00:08:18,765 --> 00:08:18,765
+317. delay(3)
+
+279
+00:08:21,769 --> 00:08:21,769
+321. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/01 Type Alamat"), Keys.chord(ENTER))
+
+280
+00:08:22,261 --> 00:08:22,261
+325. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/02 Alamat"), "Jl Jalan Jln")
+
+281
+00:08:22,893 --> 00:08:22,894
+329. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/03 Kota"), "Jakarte")
+
+282
+00:08:23,712 --> 00:08:23,713
+333. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/03 Negara"), "Indonesi")
+
+283
+00:08:24,424 --> 00:08:24,424
+337. delay(3)
+
+284
+00:08:27,426 --> 00:08:27,426
+341. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/03 Negara"), Keys.chord(ENTER))
+
+285
+00:08:27,961 --> 00:08:27,962
+345. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/10 Alamat/save"), STOP_ON_FAILURE)
+
+286
+00:08:28,563 --> 00:08:28,564
+349. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/Tambah Dokumen Identitas"), 3)
+
+287
+00:08:29,067 --> 00:08:29,067
+353. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/Tambah Dokumen Identitas"))
+
+288
+00:08:30,071 --> 00:08:30,071
+357. delay(3)
+
+289
+00:08:33,073 --> 00:08:33,073
+361. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/01 Jenis Dokumen Identitas"), "SUKET - Surat Keterangan Kependudukan")
+
+290
+00:08:34,548 --> 00:08:34,549
+365. delay(3)
+
+291
+00:08:37,550 --> 00:08:37,550
+369. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/01 Jenis Dokumen Identitas"), Keys.chord(ENTER))
+
+292
+00:08:37,986 --> 00:08:37,987
+373. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/02 No Identitas"), "12321444")
+
+293
+00:08:38,675 --> 00:08:38,676
+377. setText(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/03 Negara Penerbit"), "ID - INDONESIA")
+
+294
+00:08:39,495 --> 00:08:39,495
+381. delay(3)
+
+295
+00:08:42,497 --> 00:08:42,497
+385. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/03 Negara Penerbit"), Keys.chord(ENTER))
+
+296
+00:08:42,944 --> 00:08:42,944
+389. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/11 Dokumen Identitas/Save"))
+
+297
+00:08:43,443 --> 00:08:43,443
+393. click(findTestObject("GoAmlReport/07 Entity/Account Tab From/03 Director/99 Save"))
+
+298
+00:08:44,848 --> 00:08:44,848
+397. delay(2)
+
+299
+00:08:46,865 --> 00:08:46,866
+69. callTestCase(findTestCase("GoAML Report 5"), [:], STOP_ON_FAILURE)
+
+300
+00:08:46,974 --> 00:08:46,975
+1. for ([rowNum = 1, rowNum <= findTestData("GoAMLReport/Transaksi").getRowNumbers(), (rowNum++)])
+
+301
+00:08:46,989 --> 00:08:46,990
+1. delay(6)
+
+302
+00:08:52,992 --> 00:08:52,992
+5. if (findTestData("GoAMLReport/Transaksi").getValue(1, rowNum) == "true")
+
+303
+00:08:53,004 --> 00:08:53,005
+1. if (findTestData("GoAMLReport/Transaksi").getValue(9, rowNum) == "true")
+
+304
+00:08:53,023 --> 00:08:53,023
+5. if (findTestData("GoAMLReport/Transaksi").getValue(10, rowNum) == "uang tunai")
+
+305
+00:08:53,058 --> 00:08:53,058
+1. scrollToElement(findTestObject("GoAmlReport/04 Identitas Penerima/02 Ins Trx Tujuan"), 3)
+
+306
+00:08:53,505 --> 00:08:53,506
+5. setText(findTestObject("GoAmlReport/04 Identitas Penerima/02 Ins Trx Tujuan"), "Uang Tunai")
+
+307
+00:08:54,264 --> 00:08:54,264
+9. delay(3)
+
+308
+00:08:57,266 --> 00:08:57,266
+13. sendKeys(findTestObject("GoAmlReport/04 Identitas Penerima/02 Ins Trx Tujuan"), Keys.chord(ENTER))
+
+309
+00:08:57,756 --> 00:08:57,756
+9. if (findTestData("GoAMLReport/Transaksi").getValue(10, rowNum) == "rekening")
+
+310
+00:08:57,769 --> 00:08:57,770
+13. scrollToElement(findTestObject("GoAmlReport/04 Identitas Penerima/05 Nominal Valas"), 3)
+
+311
+00:08:58,189 --> 00:08:58,189
+17. setText(findTestObject("GoAmlReport/04 Identitas Penerima/05 Nominal Valas"), "500000")
+
+312
+00:08:58,875 --> 00:08:58,875
+21. scrollToElement(findTestObject("GoAmlReport/04 Identitas Penerima/06 Kurs"), 3)
+
+313
+00:08:59,271 --> 00:08:59,271
+25. setText(findTestObject("GoAmlReport/04 Identitas Penerima/06 Kurs"), "nope")
+
+314
+00:08:59,819 --> 00:08:59,819
+29. setText(findTestObject("GoAmlReport/04 Identitas Penerima/999 Mata Uang Tujuan"), "TWD - Taiwan Dollar")
+
+315
+00:09:01,023 --> 00:09:01,024
+33. delay(3)
+
+316
+00:09:04,027 --> 00:09:04,027
+37. sendKeys(findTestObject("GoAmlReport/04 Identitas Penerima/999 Mata Uang Tujuan"), Keys.chord(ENTER))
+
+317
+00:09:04,481 --> 00:09:04,482
+41. scrollToElement(findTestObject("GoAmlReport/04 Identitas Penerima/07 Negara Trx Tujuan"), 3)
+
+318
+00:09:04,878 --> 00:09:04,878
+45. setText(findTestObject("GoAmlReport/04 Identitas Penerima/07 Negara Trx Tujuan"), "ital")
+
+319
+00:09:05,586 --> 00:09:05,586
+49. delay(3)
+
+320
+00:09:08,588 --> 00:09:08,588
+53. sendKeys(findTestObject("GoAmlReport/04 Identitas Penerima/07 Negara Trx Tujuan"), Keys.chord(ENTER))
+
+321
+00:09:09,030 --> 00:09:09,030
+9. if (findTestData("GoAMLReport/Transaksi").getValue(11, rowNum) == "account")
+
+322
+00:09:09,043 --> 00:09:09,043
+13. if (findTestData("GoAMLReport/Transaksi").getValue(11, rowNum) == "person")
+
+323
+00:09:09,057 --> 00:09:09,058
+17. if (findTestData("GoAMLReport/Transaksi").getValue(11, rowNum) == "entity")
+
+324
+00:09:09,073 --> 00:09:09,073
+1. setText(findTestObject("GoAmlReport/04 Identitas Penerima/08 Informasi Penerima"), findTestData("GoAMLReport/Transaksi").getValue(11, rowNum))
+
+325
+00:09:09,772 --> 00:09:09,772
+5. delay(8)
+
+326
+00:09:17,773 --> 00:09:17,773
+9. sendKeys(findTestObject("GoAmlReport/04 Identitas Penerima/08 Informasi Penerima"), Keys.chord(ENTER))
+
+327
+00:09:18,232 --> 00:09:18,232
+13. delay(5)
+
+328
+00:09:23,234 --> 00:09:23,234
+17. setText(findTestObject("GoAmlReport/07 Entity/Account To/01 Nama Korporasi"), "Simpan Pinjam")
+
+329
+00:09:24,149 --> 00:09:24,150
+21. setText(findTestObject("GoAmlReport/07 Entity/Account To/02 Bentuk Korporasi"), "PD - Perusahaan Daerah")
+
+330
+00:09:25,318 --> 00:09:25,318
+25. delay(3)
+
+331
+00:09:28,321 --> 00:09:28,321
+29. sendKeys(findTestObject("GoAmlReport/07 Entity/Account To/02 Bentuk Korporasi"), Keys.chord(ENTER))
+
+332
+00:09:28,793 --> 00:09:28,794
+33. setText(findTestObject("GoAmlReport/07 Entity/Account To/03 Bidang Usaha"), "Rentenir")
+
+333
+00:09:29,530 --> 00:09:29,531
+37. delay(3)
+
+334
+00:09:32,532 --> 00:09:32,532
+41. sendKeys(findTestObject("GoAmlReport/07 Entity/Account To/03 Negara"), Keys.chord(ENTER))
+
+335
+00:09:33,076 --> 00:09:33,077
+45. delay(3)
+
+336
+00:09:36,079 --> 00:09:36,079
+49. setText(findTestObject("GoAmlReport/07 Entity/Account To/03 Negara"), "indone")
+
+337
+00:09:36,668 --> 00:09:36,668
+53. delay(3)
+
+338
+00:09:39,670 --> 00:09:39,670
+57. sendKeys(findTestObject("GoAmlReport/07 Entity/Account To/03 Negara"), Keys.chord(ENTER))
+
+339
+00:09:40,317 --> 00:09:40,318
+61. setText(findTestObject("GoAmlReport/07 Entity/Account To/04 NPWP"), "123213123")
+
+340
+00:09:41,453 --> 00:09:41,453
+65. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/Tambah Telepon"), 3)
+
+341
+00:09:41,906 --> 00:09:41,906
+69. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/Tambah Telepon"))
+
+342
+00:09:42,468 --> 00:09:42,469
+73. delay(5)
+
+343
+00:09:47,470 --> 00:09:47,470
+77. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/01 Kategori Kontak"), "D - Domisili")
+
+344
+00:09:48,429 --> 00:09:48,429
+81. delay(3)
+
+345
+00:09:51,432 --> 00:09:51,432
+85. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/01 Kategori Kontak"), Keys.chord(ENTER))
+
+346
+00:09:51,894 --> 00:09:51,894
+89. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/02 Alat Komunikasi"), "PSTN - PSTN")
+
+347
+00:09:52,710 --> 00:09:52,711
+93. delay(3)
+
+348
+00:09:55,714 --> 00:09:55,714
+97. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/02 Alat Komunikasi"), Keys.chord(ENTER))
+
+349
+00:09:56,171 --> 00:09:56,171
+101. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/03 No Telepon"), "0986745632")
+
+350
+00:09:56,934 --> 00:09:56,935
+105. delay(2)
+
+351
+00:09:58,937 --> 00:09:58,937
+109. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/Save"), 3)
+
+352
+00:09:59,322 --> 00:09:59,322
+113. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/01 Telepon/Save"), STOP_ON_FAILURE)
+
+353
+00:09:59,877 --> 00:09:59,878
+117. delay(3)
+
+354
+00:10:02,879 --> 00:10:02,879
+121. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/span_Tambah Alamat"), 3)
+
+355
+00:10:03,295 --> 00:10:03,296
+125. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/span_Tambah Alamat"))
+
+356
+00:10:03,817 --> 00:10:03,818
+129. delay(5)
+
+357
+00:10:08,819 --> 00:10:08,819
+133. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/01 Type Alamat"), "D - Domisili")
+
+358
+00:10:09,615 --> 00:10:09,616
+137. delay(5)
+
+359
+00:10:14,617 --> 00:10:14,617
+141. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/01 Type Alamat"), Keys.chord(ENTER))
+
+360
+00:10:15,056 --> 00:10:15,057
+145. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/02 Alamat"), "Jl. sdhjsadkjsnadklsandkjasd")
+
+361
+00:10:15,773 --> 00:10:15,774
+149. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/03 Kota"), "Jakarta")
+
+362
+00:10:16,420 --> 00:10:16,420
+153. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/03 Negara"), "ID - INDONESIA")
+
+363
+00:10:17,753 --> 00:10:17,754
+157. delay(3)
+
+364
+00:10:20,757 --> 00:10:20,757
+161. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/03 Negara"), Keys.chord(ENTER))
+
+365
+00:10:21,197 --> 00:10:21,198
+165. delay(2)
+
+366
+00:10:23,199 --> 00:10:23,199
+169. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/02 Alamat/save"))
+
+367
+00:10:23,928 --> 00:10:23,928
+173. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/00 Add"))
+
+368
+00:10:25,202 --> 00:10:25,202
+177. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/00 Add"), 3)
+
+369
+00:10:25,741 --> 00:10:25,742
+181. delay(5)
+
+370
+00:10:30,744 --> 00:10:30,744
+185. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/01 Jenis Kelamin"), "F - Female")
+
+371
+00:10:31,529 --> 00:10:31,529
+189. delay(5)
+
+372
+00:10:36,532 --> 00:10:36,532
+193. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/01 Jenis Kelamin"), Keys.chord(ENTER))
+
+373
+00:10:37,047 --> 00:10:37,047
+197. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/02 Nama Lengkap"), "Aman ")
+
+374
+00:10:37,794 --> 00:10:37,794
+201. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Tanggal Lahir"), "01-Aug-96")
+
+375
+00:10:38,840 --> 00:10:38,841
+205. delay(2)
+
+376
+00:10:40,844 --> 00:10:40,844
+209. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/12 Tempat Lahir"), "Jakarta")
+
+377
+00:10:41,516 --> 00:10:41,516
+213. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/04 Kewarganegaraan"), "indone")
+
+378
+00:10:42,216 --> 00:10:42,216
+217. delay(5)
+
+379
+00:10:47,219 --> 00:10:47,219
+221. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/04 Kewarganegaraan"), Keys.chord(ENTER))
+
+380
+00:10:47,694 --> 00:10:47,694
+225. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/05 Negara Domisili"), "ID - INDONESIA")
+
+381
+00:10:48,578 --> 00:10:48,579
+229. delay(3)
+
+382
+00:10:51,580 --> 00:10:51,580
+233. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/05 Negara Domisili"), Keys.chord(ENTER))
+
+383
+00:10:52,034 --> 00:10:52,035
+237. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/06 Pekerjaan"), "Kerja Serabutan")
+
+384
+00:10:52,934 --> 00:10:52,934
+241. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/07 Sumber Dana"), "Maling")
+
+385
+00:10:53,593 --> 00:10:53,593
+245. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/08 Peran"), "UBO - Ultimate Beneficial Owner")
+
+386
+00:10:55,011 --> 00:10:55,012
+249. delay(2)
+
+387
+00:10:57,014 --> 00:10:57,014
+253. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/08 Peran"), Keys.chord(ENTER))
+
+388
+00:10:57,512 --> 00:10:57,512
+257. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/Tambah Telepon"))
+
+389
+00:10:58,172 --> 00:10:58,172
+261. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/01 Kategori Kontak"), 3)
+
+390
+00:10:59,522 --> 00:10:59,522
+265. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/01 Kategori Kontak"), "K - Kantor")
+
+391
+00:11:00,322 --> 00:11:00,323
+269. delay(3)
+
+392
+00:11:03,325 --> 00:11:03,325
+273. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/01 Kategori Kontak"), Keys.chord(ENTER))
+
+393
+00:11:03,769 --> 00:11:03,769
+277. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/02 Alat Komunikasi"), "PSTN - PSTN")
+
+394
+00:11:04,576 --> 00:11:04,577
+281. delay(3)
+
+395
+00:11:07,580 --> 00:11:07,580
+285. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/02 Alat Komunikasi"), Keys.chord(ENTER))
+
+396
+00:11:08,053 --> 00:11:08,053
+289. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/03 No Telepon"), "222222222")
+
+397
+00:11:08,961 --> 00:11:08,962
+293. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/09 Telepon/Save"), STOP_ON_FAILURE)
+
+398
+00:11:09,481 --> 00:11:09,481
+297. delay(4)
+
+399
+00:11:13,484 --> 00:11:13,484
+301. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/span_Tambah Alamat"), 3)
+
+400
+00:11:13,949 --> 00:11:13,949
+305. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/span_Tambah Alamat"))
+
+401
+00:11:14,467 --> 00:11:14,468
+309. delay(3)
+
+402
+00:11:17,471 --> 00:11:17,471
+313. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/01 Type Alamat"), "R - Rumah")
+
+403
+00:11:18,386 --> 00:11:18,387
+317. delay(3)
+
+404
+00:11:21,389 --> 00:11:21,389
+321. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/01 Type Alamat"), Keys.chord(ENTER))
+
+405
+00:11:21,870 --> 00:11:21,871
+325. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/02 Alamat"), "Jl Jalan Jln")
+
+406
+00:11:22,506 --> 00:11:22,506
+329. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/03 Kota"), "Jakarte")
+
+407
+00:11:23,194 --> 00:11:23,195
+333. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/03 Negara"), "Indonesi")
+
+408
+00:11:23,899 --> 00:11:23,900
+337. delay(3)
+
+409
+00:11:26,902 --> 00:11:26,902
+341. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/03 Negara"), Keys.chord(ENTER))
+
+410
+00:11:27,502 --> 00:11:27,502
+345. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/10 Alamat/save"), STOP_ON_FAILURE)
+
+411
+00:11:28,134 --> 00:11:28,135
+349. scrollToElement(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/Tambah Dokumen Identitas"), 3)
+
+412
+00:11:28,591 --> 00:11:28,592
+353. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/Tambah Dokumen Identitas"))
+
+413
+00:11:29,662 --> 00:11:29,663
+357. delay(3)
+
+414
+00:11:32,666 --> 00:11:32,666
+361. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/01 Jenis Dokumen Identitas"), "SUKET - Surat Keterangan Kependudukan")
+
+415
+00:11:34,244 --> 00:11:34,244
+365. delay(3)
+
+416
+00:11:37,246 --> 00:11:37,246
+369. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/01 Jenis Dokumen Identitas"), Keys.chord(ENTER))
+
+417
+00:11:37,704 --> 00:11:37,705
+373. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/02 No Identitas"), "12321444")
+
+418
+00:11:38,397 --> 00:11:38,397
+377. setText(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/03 Negara Penerbit"), "ID - INDONESIA")
+
+419
+00:11:39,282 --> 00:11:39,282
+381. delay(3)
+
+420
+00:11:42,284 --> 00:11:42,284
+385. sendKeys(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/03 Negara Penerbit"), Keys.chord(ENTER))
+
+421
+00:11:42,817 --> 00:11:42,817
+389. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/11 Dokumen Identitas/Save"))
+
+422
+00:11:43,821 --> 00:11:43,822
+393. click(findTestObject("GoAmlReport/07 Entity/Account Tab To/03 Director/99 Save"))
+
+423
+00:11:45,310 --> 00:11:45,311
+397. delay(2)
+

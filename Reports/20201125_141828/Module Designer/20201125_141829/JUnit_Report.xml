@@ -1,0 +1,659 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Module Designer" time="151.25" tests="1" failures="1" errors="0">
+   <testsuite name="Module Designer" tests="1" failures="1" errors="0" time="151.25" timestamp="2020-11-25 14:18:40" hostname="user - NDS-LPT-0080" id="Test Suites/Module Designer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_141828\\Module Designer\\20201125_141829"/>
+         <property name="logFiles" value="D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_141828\\Module Designer\\20201125_141829\\execution0.log"/>
+         <property name="attachments" value="D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_141828\\Module Designer\\20201125_141829\\1606288858360.png"/>
+         <property name="hostName" value="user - NDS-LPT-0080"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 87.0.4280.66"/>
+         <property name="hostAddress" value="192.168.43.60"/>
+         <property name="sessionId" value="9cbb45baed3ae9ee6216c7ca20d3f0b3"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/System Parameter/Data Model Designer" time="149.886" classname="Test Cases/System Parameter/Data Model Designer" status="FAILED">
+         <failure type="FAILED" message="Test Cases/System Parameter/Data Model Designer FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;span id=&quot;ContentPlaceHolder1_btnAddNew-btnInnerEl&quot; data-ref=&quot;btnInnerEl&quot; unselectable=&quot;on&quot; class=&quot;x-btn-inner x-btn-inner-default-toolbar-small&quot;>...&lt;/span> is not clickable at point (96, 461). Other element would receive the click: &lt;div role=&quot;presentation&quot; class=&quot;x-mask x-border-box&quot; id=&quot;ext-element-97&quot;>...&lt;/div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+"/>
+         <system-out><![CDATA[2020-11-25 14:18:40 - [TEST_CASE][FAILED] - Test Cases/System Parameter/Data Model Designer: Test Cases/System Parameter/Data Model Designer FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more
+
+
+2020-11-25 14:18:42 - [TEST_STEP][PASSED] - openBrowser("http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx"): Browser is opened with url: 'http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx'
+
+2020-11-25 14:18:43 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-11-25 14:18:43 - [MESSAGE][INFO] - User set preference: ['property', '']
+
+2020-11-25 14:18:43 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-11-25 14:18:55 - [MESSAGE][PASSED] - Browser is opened with url: 'http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx'
+
+2020-11-25 14:18:55 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-11-25 14:18:58 - [MESSAGE][PASSED] - Current window maximized
+
+2020-11-25 14:18:58 - [TEST_STEP][PASSED] - setText(findTestObject("All/UserName"), "sysadmin"): Text 'sysadmin' is set on object 'Object Repository/All/UserName'
+
+2020-11-25 14:19:01 - [MESSAGE][PASSED] - Text 'sysadmin' is set on object 'Object Repository/All/UserName'
+
+2020-11-25 14:19:01 - [TEST_STEP][PASSED] - setText(findTestObject("All/password"), "superuser"): Text 'superuser' is set on object 'Object Repository/All/password'
+
+2020-11-25 14:19:02 - [MESSAGE][PASSED] - Text 'superuser' is set on object 'Object Repository/All/password'
+
+2020-11-25 14:19:02 - [TEST_STEP][PASSED] - click(findTestObject("All/Sign In")): Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-11-25 14:19:04 - [MESSAGE][PASSED] - Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-11-25 14:19:04 - [TEST_STEP][PASSED] - setText(findTestObject("All/filter"), "Data Model Designer"): Text 'Data Model Designer' is set on object 'Object Repository/All/filter'
+
+2020-11-25 14:19:08 - [MESSAGE][PASSED] - Text 'Data Model Designer' is set on object 'Object Repository/All/filter'
+
+2020-11-25 14:19:08 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:19:10 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:19:10 - [TEST_STEP][PASSED] - click(findTestObject("All/View")): Object: 'Object Repository/All/View' is clicked on
+
+2020-11-25 14:19:10 - [MESSAGE][PASSED] - Object: 'Object Repository/All/View' is clicked on
+
+2020-11-25 14:19:10 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:19:13 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:19:13 - [TEST_STEP][PASSED] - click(findTestObject("All/New Record")): Object: 'Object Repository/All/New Record' is clicked on
+
+2020-11-25 14:19:15 - [MESSAGE][PASSED] - Object: 'Object Repository/All/New Record' is clicked on
+
+2020-11-25 14:19:15 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:19:16 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:19:16 - [TEST_STEP][PASSED] - for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer").getRowNumbers(), (rowNum++)]): null
+
+2020-11-25 14:19:25 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module name"), findTestData("System Parameter/Module Designer").getValue(1, rowNum)): Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module name'
+
+2020-11-25 14:19:26 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module name'
+
+2020-11-25 14:19:26 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module label"), findTestData("System Parameter/Module Designer").getValue(2, rowNum)): Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module label'
+
+2020-11-25 14:19:27 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module label'
+
+2020-11-25 14:19:27 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module desc"), findTestData("System Parameter/Module Designer").getValue(3, rowNum)): Text 'User Tes' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module desc'
+
+2020-11-25 14:19:28 - [MESSAGE][PASSED] - Text 'User Tes' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module desc'
+
+2020-11-25 14:19:28 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(4, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:19:28 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:19:29 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:19:29 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(5, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:19:29 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/edit")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:19:29 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:19:30 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(6, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:19:30 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/delete")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:19:31 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:19:31 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(7, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:19:31 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/view")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:19:33 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:19:33 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(8, rowNum) == "true"): null
+
+2020-11-25 14:19:33 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(9, rowNum) == "true"): null
+
+2020-11-25 14:19:33 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(10, rowNum) == "true"): null
+
+2020-11-25 14:19:33 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(11, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:19:33 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/detail")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:19:37 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:19:37 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(12, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:19:37 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/designer")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:19:41 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:19:41 - [TEST_STEP][PASSED] - break: null
+
+2020-11-25 14:19:41 - [TEST_STEP][FAILED] - for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer 2").getRowNumbers(), (rowNum++)]): Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1584069430794.run(Script1584069430794.groovy:93)
+	... 13 more
+)
+
+2020-11-25 14:19:41 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:19:41 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:19:45 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:19:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:19:48 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:19:48 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:19:51 - [MESSAGE][PASSED] - Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:19:51 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:19:54 - [MESSAGE][PASSED] - Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:19:54 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '1' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:19:58 - [MESSAGE][PASSED] - Text '1' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:19:58 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:19:58 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/4 Primary Key")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:20:01 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:20:01 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:20:01 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/5 Require")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:20:04 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:20:04 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:20:04 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/6 Unik")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:20:07 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:20:07 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): null
+
+2020-11-25 14:20:07 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): null
+
+2020-11-25 14:20:07 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text 'NOPE' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:20:10 - [MESSAGE][PASSED] - Text 'NOPE' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:20:10 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'NumberField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:20:12 - [MESSAGE][PASSED] - Text 'NumberField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:20:12 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:20:13 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:20:13 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:20:14 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:20:14 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'BIG IDENTITY' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:20:17 - [MESSAGE][PASSED] - Text 'BIG IDENTITY' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:20:17 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:20:18 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:20:18 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:20:19 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:20:19 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:20:20 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:20:22 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:20:22 - [TEST_STEP][FAILED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1584069430794.run(Script1584069430794.groovy:93)
+	... 13 more
+)
+
+2020-11-25 14:20:22 - [TEST_STEP][FAILED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1584069430794.run(Script1584069430794.groovy:93)
+	... 13 more
+)
+
+2020-11-25 14:21:08 - [MESSAGE][FAILED] - Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' (Root cause: com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Script1584069430794.run(Script1584069430794.groovy:93)
+	... 13 more
+)
+[[ATTACHMENT|D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_141828\\Module Designer\\20201125_141829\\1606288858360.png]]]]></system-out>
+         <system-err><![CDATA[2020-11-25 14:18:40 - [TEST_CASE][FAILED] - Test Cases/System Parameter/Data Model Designer: Test Cases/System Parameter/Data Model Designer FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-11-25 14:18:40 - [TEST_SUITE][FAILED] - Module Designer: Test Cases/System Parameter/Data Model Designer FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-out>
+      <system-err><![CDATA[2020-11-25 14:18:40 - [TEST_SUITE][FAILED] - Module Designer: Test Cases/System Parameter/Data Model Designer FAILED.
+Reason:
+com.kms.katalon.core.exception.StepFailedException: Unable to click on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add'
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.stepFailed(WebUIKeywordMain.groovy:64)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:26)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.click(ClickKeyword.groovy:76)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword.execute(ClickKeyword.groovy:43)
+	at com.kms.katalon.core.keyword.internal.KeywordExecutor.executeKeywordForPlatform(KeywordExecutor.groovy:73)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords.click(WebUiBuiltInKeywords.groovy:617)
+	at com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords$click$2.call(Unknown Source)
+	at Data Model Designer.run(Data Model Designer:93)
+	at com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)
+	at com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)
+	at com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:339)
+	at com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:330)
+	at com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:309)
+	at com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:301)
+	at com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:235)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:191)
+	at com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:141)
+	at com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:90)
+	at com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)
+	at com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)
+	at TempTestSuite1606288709411.run(TempTestSuite1606288709411.groovy:39)
+Caused by: org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span id="ContentPlaceHolder1_btnAddNew-btnInnerEl" data-ref="btnInnerEl" unselectable="on" class="x-btn-inner x-btn-inner-default-toolbar-small">...</span> is not clickable at point (96, 461). Other element would receive the click: <div role="presentation" class="x-mask x-border-box" id="ext-element-97">...</div>
+  (Session info: chrome=87.0.4280.66)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:53'
+System info: host: 'NDS-LPT-0080', ip: '192.168.43.60', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_181'
+Driver info: com.kms.katalon.selenium.driver.CChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: C:\Users\user\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:61156}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 9cbb45baed3ae9ee6216c7ca20d3f0b3
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at com.kms.katalon.selenium.driver.CChromeDriver.execute(CChromeDriver.java:19)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:404)
+	at com.sun.proxy.$Proxy10.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:417)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.doCall(ClickKeyword.groovy:69)
+	at com.kms.katalon.core.webui.keyword.builtin.ClickKeyword$_click_closure1.call(ClickKeyword.groovy)
+	at com.kms.katalon.core.webui.keyword.internal.WebUIKeywordMain.runKeyword(WebUIKeywordMain.groovy:20)
+	... 19 more]]></system-err>
+   </testsuite>
+</testsuites>

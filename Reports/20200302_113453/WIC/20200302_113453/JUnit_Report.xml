@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="WIC" time="112.58" tests="1" failures="0" errors="0">
+   <testsuite name="WIC" tests="1" failures="0" errors="0" time="112.58" timestamp="2020-03-02 11:35:02" hostname="user - NDS-LPT-0080" id="Test Suites/WIC">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\poject\\goaml2\\Katalon\\GoAML\\Reports\\20200302_113453\\WIC\\20200302_113453"/>
+         <property name="logFiles" value="D:\\poject\\goaml2\\Katalon\\GoAML\\Reports\\20200302_113453\\WIC\\20200302_113453\\execution0.log"/>
+         <property name="attachments" value="D:\\poject\\goaml2\\Katalon\\GoAML\\Reports\\20200302_113453\\WIC\\20200302_113453/videos\\test_1.avi"/>
+         <property name="hostName" value="user - NDS-LPT-0080"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 80.0.3987.122"/>
+         <property name="hostAddress" value="10.5.50.100"/>
+         <property name="sessionId" value="1fbf630968721005217bcbba3474f775"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation{proxyOption=NO_PROXY, proxyServerType=HTTP, password=, proxyServerAddress=, proxyServerPort=0, executionList=}"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Parameter/WIC/Add" time="110.592" classname="Test Cases/Parameter/WIC/Add" status="PASSED">
+         <system-out><![CDATA[2020-03-02 11:35:03 - [TEST_CASE][PASSED] - Test Cases/Parameter/WIC/Add: Test Cases/Parameter/WIC/Add
+
+2020-03-02 11:35:04 - [TEST_STEP][PASSED] - openBrowser("http://ndsantasena.southeastasia.cloudapp.azure.com:8080/Default.aspx"): Browser is opened with url: 'http://ndsantasena.southeastasia.cloudapp.azure.com:8080/Default.aspx'
+
+2020-03-02 11:35:05 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-03-02 11:35:05 - [MESSAGE][INFO] - User set preference: ['property', '']
+
+2020-03-02 11:35:05 - [MESSAGE][INFO] - Action delay is set to 0 seconds
+
+2020-03-02 11:35:19 - [MESSAGE][PASSED] - Browser is opened with url: 'http://ndsantasena.southeastasia.cloudapp.azure.com:8080/Default.aspx'
+
+2020-03-02 11:35:19 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-03-02 11:35:23 - [MESSAGE][PASSED] - Current window maximized
+
+2020-03-02 11:35:23 - [TEST_STEP][PASSED] - setText(findTestObject("All/UserName"), "anggi1"): Text 'anggi1' is set on object 'Object Repository/All/UserName'
+
+2020-03-02 11:35:24 - [MESSAGE][PASSED] - Text 'anggi1' is set on object 'Object Repository/All/UserName'
+
+2020-03-02 11:35:24 - [TEST_STEP][PASSED] - setEncryptedText(findTestObject("All/password"), "iFGeFYmXIrWy72D5I5E8Dw=="): Text ****** has been set on object 'Object Repository/All/password'
+
+2020-03-02 11:35:25 - [MESSAGE][PASSED] - Text ****** has been set on object 'Object Repository/All/password'
+
+2020-03-02 11:35:25 - [TEST_STEP][PASSED] - click(findTestObject("All/Sign In")): Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-03-02 11:35:29 - [MESSAGE][PASSED] - Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-03-02 11:35:29 - [TEST_STEP][PASSED] - for ([rowNum = 1, rowNum <= findTestData("Parameter/WIC Add").getRowNumbers(), (rowNum++)]): Object: 'Object Repository/Parameter/WIC/Button/save 2' is clicked on
+
+2020-03-02 11:35:30 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2020-03-02 11:35:35 - [MESSAGE][PASSED] - Refresh successfully
+
+2020-03-02 11:35:35 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:35:38 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:35:38 - [TEST_STEP][PASSED] - setText(findTestObject("All/filter"), "WIC"): Text 'WIC' is set on object 'Object Repository/All/filter'
+
+2020-03-02 11:35:39 - [MESSAGE][PASSED] - Text 'WIC' is set on object 'Object Repository/All/filter'
+
+2020-03-02 11:35:39 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:35:40 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:35:40 - [TEST_STEP][PASSED] - click(findTestObject("All/View")): Object: 'Object Repository/All/View' is clicked on
+
+2020-03-02 11:35:40 - [MESSAGE][PASSED] - Object: 'Object Repository/All/View' is clicked on
+
+2020-03-02 11:35:40 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:35:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:35:43 - [TEST_STEP][PASSED] - click(findTestObject("All/New Record")): Object: 'Object Repository/All/New Record' is clicked on
+
+2020-03-02 11:35:45 - [MESSAGE][PASSED] - Object: 'Object Repository/All/New Record' is clicked on
+
+2020-03-02 11:35:45 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:35:48 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:35:48 - [TEST_STEP][PASSED] - if (findTestData("Parameter/WIC Add").getValue(32, rowNum) == "Individu"): null
+
+2020-03-02 11:35:48 - [TEST_STEP][PASSED] - else if (findTestData("Parameter/WIC Add").getValue(32, rowNum) == "Corporate"): Text 'asdasdas' is set on object 'Object Repository/Parameter/WIC/Corporate/1/5 Bidang Usaha'
+
+2020-03-02 11:35:48 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Button/Corp"), "Corporate"): Text 'Corporate' is set on object 'Object Repository/Parameter/WIC/Button/Corp'
+
+2020-03-02 11:35:51 - [MESSAGE][PASSED] - Text 'Corporate' is set on object 'Object Repository/Parameter/WIC/Button/Corp'
+
+2020-03-02 11:35:51 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/1 Nama Korporasi"), findTestData("Parameter/WIC Add").getValue(33, rowNum)): Text 'asdasda' is set on object 'Object Repository/Parameter/WIC/Corporate/1/1 Nama Korporasi'
+
+2020-03-02 11:35:52 - [MESSAGE][PASSED] - Text 'asdasda' is set on object 'Object Repository/Parameter/WIC/Corporate/1/1 Nama Korporasi'
+
+2020-03-02 11:35:52 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/2 Nama Komersial"), findTestData("Parameter/WIC Add").getValue(34, rowNum)): Text 'asdasdas' is set on object 'Object Repository/Parameter/WIC/Corporate/1/2 Nama Komersial'
+
+2020-03-02 11:35:53 - [MESSAGE][PASSED] - Text 'asdasdas' is set on object 'Object Repository/Parameter/WIC/Corporate/1/2 Nama Komersial'
+
+2020-03-02 11:35:53 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/3 Bentuk Korporasi"), findTestData("Parameter/WIC Add").getValue(35, rowNum)): Text 'sadsada' is set on object 'Object Repository/Parameter/WIC/Corporate/1/3 Bentuk Korporasi'
+
+2020-03-02 11:35:54 - [MESSAGE][PASSED] - Text 'sadsada' is set on object 'Object Repository/Parameter/WIC/Corporate/1/3 Bentuk Korporasi'
+
+2020-03-02 11:35:54 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/4 No Induk Berusaha"), findTestData("Parameter/WIC Add").getValue(36, rowNum)): Text 'sadsad' is set on object 'Object Repository/Parameter/WIC/Corporate/1/4 No Induk Berusaha'
+
+2020-03-02 11:35:55 - [MESSAGE][PASSED] - Text 'sadsad' is set on object 'Object Repository/Parameter/WIC/Corporate/1/4 No Induk Berusaha'
+
+2020-03-02 11:35:55 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/5 Bidang Usaha"), findTestData("Parameter/WIC Add").getValue(33, rowNum)): Text 'asdasda' is set on object 'Object Repository/Parameter/WIC/Corporate/1/5 Bidang Usaha'
+
+2020-03-02 11:35:57 - [MESSAGE][PASSED] - Text 'asdasda' is set on object 'Object Repository/Parameter/WIC/Corporate/1/5 Bidang Usaha'
+
+2020-03-02 11:35:57 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Corporate/1/5 Bidang Usaha"), findTestData("Parameter/WIC Add").getValue(34, rowNum)): Text 'asdasdas' is set on object 'Object Repository/Parameter/WIC/Corporate/1/5 Bidang Usaha'
+
+2020-03-02 11:35:58 - [MESSAGE][PASSED] - Text 'asdasdas' is set on object 'Object Repository/Parameter/WIC/Corporate/1/5 Bidang Usaha'
+
+2020-03-02 11:35:58 - [TEST_STEP][PASSED] - refresh(): Refresh successfully
+
+2020-03-02 11:35:59 - [MESSAGE][PASSED] - Refresh successfully
+
+2020-03-02 11:35:59 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:36:02 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:36:02 - [TEST_STEP][PASSED] - setText(findTestObject("All/filter"), "WIC"): Text 'WIC' is set on object 'Object Repository/All/filter'
+
+2020-03-02 11:36:03 - [MESSAGE][PASSED] - Text 'WIC' is set on object 'Object Repository/All/filter'
+
+2020-03-02 11:36:03 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:04 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:04 - [TEST_STEP][PASSED] - click(findTestObject("All/View")): Object: 'Object Repository/All/View' is clicked on
+
+2020-03-02 11:36:04 - [MESSAGE][PASSED] - Object: 'Object Repository/All/View' is clicked on
+
+2020-03-02 11:36:04 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:36:07 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:36:07 - [TEST_STEP][PASSED] - click(findTestObject("All/New Record")): Object: 'Object Repository/All/New Record' is clicked on
+
+2020-03-02 11:36:08 - [MESSAGE][PASSED] - Object: 'Object Repository/All/New Record' is clicked on
+
+2020-03-02 11:36:08 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-03-02 11:36:11 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-03-02 11:36:11 - [TEST_STEP][PASSED] - if (findTestData("Parameter/WIC Add").getValue(32, rowNum) == "Individu"): Object: 'Object Repository/Parameter/WIC/Button/save 2' is clicked on
+
+2020-03-02 11:36:11 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/1 Gelar"), findTestData("Parameter/WIC Add").getValue(1, rowNum)): Text 'Mr' is set on object 'Object Repository/Parameter/WIC/Add/1 Gelar'
+
+2020-03-02 11:36:11 - [MESSAGE][PASSED] - Text 'Mr' is set on object 'Object Repository/Parameter/WIC/Add/1 Gelar'
+
+2020-03-02 11:36:11 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/2 Nama Lengkap"), findTestData("Parameter/WIC Add").getValue(2, rowNum)): Text 'Anggi Firmansah' is set on object 'Object Repository/Parameter/WIC/Add/2 Nama Lengkap'
+
+2020-03-02 11:36:13 - [MESSAGE][PASSED] - Text 'Anggi Firmansah' is set on object 'Object Repository/Parameter/WIC/Add/2 Nama Lengkap'
+
+2020-03-02 11:36:13 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/3 Tanggal Lahir"), findTestData("Parameter/WIC Add").getValue(3, rowNum)): Text '3/13/1993' is set on object 'Object Repository/Parameter/WIC/Add/3 Tanggal Lahir'
+
+2020-03-02 11:36:15 - [MESSAGE][PASSED] - Text '3/13/1993' is set on object 'Object Repository/Parameter/WIC/Add/3 Tanggal Lahir'
+
+2020-03-02 11:36:15 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/4 Tempat Lahir"), findTestData("Parameter/WIC Add").getValue(4, rowNum)): Text 'Jakarta' is set on object 'Object Repository/Parameter/WIC/Add/4 Tempat Lahir'
+
+2020-03-02 11:36:16 - [MESSAGE][PASSED] - Text 'Jakarta' is set on object 'Object Repository/Parameter/WIC/Add/4 Tempat Lahir'
+
+2020-03-02 11:36:16 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/5 Nama Ibu Kandung"), findTestData("Parameter/WIC Add").getValue(5, rowNum)): Text 'Ibu' is set on object 'Object Repository/Parameter/WIC/Add/5 Nama Ibu Kandung'
+
+2020-03-02 11:36:17 - [MESSAGE][PASSED] - Text 'Ibu' is set on object 'Object Repository/Parameter/WIC/Add/5 Nama Ibu Kandung'
+
+2020-03-02 11:36:17 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/6 Nama Alias"), findTestData("Parameter/WIC Add").getValue(6, rowNum)): Text 'Bo' is set on object 'Object Repository/Parameter/WIC/Add/6 Nama Alias'
+
+2020-03-02 11:36:18 - [MESSAGE][PASSED] - Text 'Bo' is set on object 'Object Repository/Parameter/WIC/Add/6 Nama Alias'
+
+2020-03-02 11:36:18 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/7 NIK"), findTestData("Parameter/WIC Add").getValue(7, rowNum)): Text '123123' is set on object 'Object Repository/Parameter/WIC/Add/7 NIK'
+
+2020-03-02 11:36:18 - [MESSAGE][PASSED] - Text '123123' is set on object 'Object Repository/Parameter/WIC/Add/7 NIK'
+
+2020-03-02 11:36:18 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/8 No Passport"), findTestData("Parameter/WIC Add").getValue(8, rowNum)): Text '321321' is set on object 'Object Repository/Parameter/WIC/Add/8 No Passport'
+
+2020-03-02 11:36:19 - [MESSAGE][PASSED] - Text '321321' is set on object 'Object Repository/Parameter/WIC/Add/8 No Passport'
+
+2020-03-02 11:36:19 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/9 Negara Penerbit Passport"), findTestData("Parameter/WIC Add").getValue(9, rowNum)): Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/9 Negara Penerbit Passport'
+
+2020-03-02 11:36:20 - [MESSAGE][PASSED] - Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/9 Negara Penerbit Passport'
+
+2020-03-02 11:36:20 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_10 No Identitas Lain"), findTestData("Parameter/WIC Add").getValue(10, rowNum)): Text '1122' is set on object 'Object Repository/Parameter/WIC/Add/_10 No Identitas Lain'
+
+2020-03-02 11:36:20 - [MESSAGE][PASSED] - Text '1122' is set on object 'Object Repository/Parameter/WIC/Add/_10 No Identitas Lain'
+
+2020-03-02 11:36:20 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_11 Kwarga 1"), findTestData("Parameter/WIC Add").getValue(11, rowNum)): Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_11 Kwarga 1'
+
+2020-03-02 11:36:21 - [MESSAGE][PASSED] - Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_11 Kwarga 1'
+
+2020-03-02 11:36:21 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:22 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:22 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_11 Kwarga 1"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_11 Kwarga 1'
+
+2020-03-02 11:36:22 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_11 Kwarga 1'
+
+2020-03-02 11:36:22 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_12 Kwarga 2"), findTestData("Parameter/WIC Add").getValue(12, rowNum)): Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_12 Kwarga 2'
+
+2020-03-02 11:36:23 - [MESSAGE][PASSED] - Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_12 Kwarga 2'
+
+2020-03-02 11:36:23 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:24 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:24 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_12 Kwarga 2"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_12 Kwarga 2'
+
+2020-03-02 11:36:25 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_12 Kwarga 2'
+
+2020-03-02 11:36:25 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_13 Kwarga 3"), findTestData("Parameter/WIC Add").getValue(13, rowNum)): Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_13 Kwarga 3'
+
+2020-03-02 11:36:25 - [MESSAGE][PASSED] - Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/_13 Kwarga 3'
+
+2020-03-02 11:36:25 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:26 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:26 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_13 Kwarga 3"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_13 Kwarga 3'
+
+2020-03-02 11:36:27 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_13 Kwarga 3'
+
+2020-03-02 11:36:27 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/Negara Domisili"), findTestData("Parameter/WIC Add").getValue(14, rowNum)): Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/Negara Domisili'
+
+2020-03-02 11:36:27 - [MESSAGE][PASSED] - Text 'INDONESIA' is set on object 'Object Repository/Parameter/WIC/Add/Negara Domisili'
+
+2020-03-02 11:36:27 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:28 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:28 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/Negara Domisili"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/Negara Domisili'
+
+2020-03-02 11:36:29 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/Negara Domisili'
+
+2020-03-02 11:36:29 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_14 Email"), findTestData("Parameter/WIC Add").getValue(15, rowNum)): Text 'd@gmail.com' is set on object 'Object Repository/Parameter/WIC/Add/_14 Email'
+
+2020-03-02 11:36:29 - [MESSAGE][PASSED] - Text 'd@gmail.com' is set on object 'Object Repository/Parameter/WIC/Add/_14 Email'
+
+2020-03-02 11:36:29 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_15 Pekerjaan"), findTestData("Parameter/WIC Add").getValue(16, rowNum)): Text 'RT' is set on object 'Object Repository/Parameter/WIC/Add/_15 Pekerjaan'
+
+2020-03-02 11:36:30 - [MESSAGE][PASSED] - Text 'RT' is set on object 'Object Repository/Parameter/WIC/Add/_15 Pekerjaan'
+
+2020-03-02 11:36:30 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_16 Tempat Bekerja"), findTestData("Parameter/WIC Add").getValue(17, rowNum)): Text 'Jakarta' is set on object 'Object Repository/Parameter/WIC/Add/_16 Tempat Bekerja'
+
+2020-03-02 11:36:31 - [MESSAGE][PASSED] - Text 'Jakarta' is set on object 'Object Repository/Parameter/WIC/Add/_16 Tempat Bekerja'
+
+2020-03-02 11:36:31 - [TEST_STEP][PASSED] - click(findTestObject("Parameter/WIC/Button/New Detail 1")): Object: 'Object Repository/Parameter/WIC/Button/New Detail 1' is clicked on
+
+2020-03-02 11:36:31 - [MESSAGE][PASSED] - Object: 'Object Repository/Parameter/WIC/Button/New Detail 1' is clicked on
+
+2020-03-02 11:36:31 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_17 Kategori Kontak"), findTestData("Parameter/WIC Add").getValue(18, rowNum)): Text 'Rumah' is set on object 'Object Repository/Parameter/WIC/Add/_17 Kategori Kontak'
+
+2020-03-02 11:36:32 - [MESSAGE][PASSED] - Text 'Rumah' is set on object 'Object Repository/Parameter/WIC/Add/_17 Kategori Kontak'
+
+2020-03-02 11:36:32 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:33 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:33 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_17 Kategori Kontak"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_17 Kategori Kontak'
+
+2020-03-02 11:36:33 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_17 Kategori Kontak'
+
+2020-03-02 11:36:33 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_18 J Alat Kom"), findTestData("Parameter/WIC Add").getValue(19, rowNum)): Text 'PSTN' is set on object 'Object Repository/Parameter/WIC/Add/_18 J Alat Kom'
+
+2020-03-02 11:36:34 - [MESSAGE][PASSED] - Text 'PSTN' is set on object 'Object Repository/Parameter/WIC/Add/_18 J Alat Kom'
+
+2020-03-02 11:36:34 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:35 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:35 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_18 J Alat Kom"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_18 J Alat Kom'
+
+2020-03-02 11:36:35 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_18 J Alat Kom'
+
+2020-03-02 11:36:35 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_19 Kode Area Tlp"), findTestData("Parameter/WIC Add").getValue(20, rowNum)): Text '001' is set on object 'Object Repository/Parameter/WIC/Add/_19 Kode Area Tlp'
+
+2020-03-02 11:36:36 - [MESSAGE][PASSED] - Text '001' is set on object 'Object Repository/Parameter/WIC/Add/_19 Kode Area Tlp'
+
+2020-03-02 11:36:36 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_20 No Tlp"), findTestData("Parameter/WIC Add").getValue(21, rowNum)): Text '123' is set on object 'Object Repository/Parameter/WIC/Add/_20 No Tlp'
+
+2020-03-02 11:36:37 - [MESSAGE][PASSED] - Text '123' is set on object 'Object Repository/Parameter/WIC/Add/_20 No Tlp'
+
+2020-03-02 11:36:37 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_21 No Extensi"), findTestData("Parameter/WIC Add").getValue(22, rowNum)): Text '321' is set on object 'Object Repository/Parameter/WIC/Add/_21 No Extensi'
+
+2020-03-02 11:36:37 - [MESSAGE][PASSED] - Text '321' is set on object 'Object Repository/Parameter/WIC/Add/_21 No Extensi'
+
+2020-03-02 11:36:37 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_22 Catatan"), findTestData("Parameter/WIC Add").getValue(23, rowNum)): Text 'No' is set on object 'Object Repository/Parameter/WIC/Add/_22 Catatan'
+
+2020-03-02 11:36:38 - [MESSAGE][PASSED] - Text 'No' is set on object 'Object Repository/Parameter/WIC/Add/_22 Catatan'
+
+2020-03-02 11:36:38 - [TEST_STEP][PASSED] - click(findTestObject("Parameter/WIC/Button/Save")): Object: 'Object Repository/Parameter/WIC/Button/Save' is clicked on
+
+2020-03-02 11:36:38 - [MESSAGE][PASSED] - Object: 'Object Repository/Parameter/WIC/Button/Save' is clicked on
+
+2020-03-02 11:36:38 - [TEST_STEP][PASSED] - click(findTestObject("Parameter/WIC/Button/New Detail 2")): Object: 'Object Repository/Parameter/WIC/Button/New Detail 2' is clicked on
+
+2020-03-02 11:36:41 - [MESSAGE][PASSED] - Object: 'Object Repository/Parameter/WIC/Button/New Detail 2' is clicked on
+
+2020-03-02 11:36:41 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_23 Type Alamat"), findTestData("Parameter/WIC Add").getValue(24, rowNum)): Text 'Rumah' is set on object 'Object Repository/Parameter/WIC/Add/_23 Type Alamat'
+
+2020-03-02 11:36:41 - [MESSAGE][PASSED] - Text 'Rumah' is set on object 'Object Repository/Parameter/WIC/Add/_23 Type Alamat'
+
+2020-03-02 11:36:41 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:42 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:42 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_23 Type Alamat"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_23 Type Alamat'
+
+2020-03-02 11:36:43 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_23 Type Alamat'
+
+2020-03-02 11:36:43 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_24 Alamat"), findTestData("Parameter/WIC Add").getValue(25, rowNum)): Text 'JKT' is set on object 'Object Repository/Parameter/WIC/Add/_24 Alamat'
+
+2020-03-02 11:36:43 - [MESSAGE][PASSED] - Text 'JKT' is set on object 'Object Repository/Parameter/WIC/Add/_24 Alamat'
+
+2020-03-02 11:36:43 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_25 Kecamatan"), findTestData("Parameter/WIC Add").getValue(26, rowNum)): Text 'TGR' is set on object 'Object Repository/Parameter/WIC/Add/_25 Kecamatan'
+
+2020-03-02 11:36:44 - [MESSAGE][PASSED] - Text 'TGR' is set on object 'Object Repository/Parameter/WIC/Add/_25 Kecamatan'
+
+2020-03-02 11:36:44 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_26 Kota"), findTestData("Parameter/WIC Add").getValue(27, rowNum)): Text 'JKT' is set on object 'Object Repository/Parameter/WIC/Add/_26 Kota'
+
+2020-03-02 11:36:45 - [MESSAGE][PASSED] - Text 'JKT' is set on object 'Object Repository/Parameter/WIC/Add/_26 Kota'
+
+2020-03-02 11:36:45 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_27 Kode Pos"), findTestData("Parameter/WIC Add").getValue(28, rowNum)): Text '1122' is set on object 'Object Repository/Parameter/WIC/Add/_27 Kode Pos'
+
+2020-03-02 11:36:46 - [MESSAGE][PASSED] - Text '1122' is set on object 'Object Repository/Parameter/WIC/Add/_27 Kode Pos'
+
+2020-03-02 11:36:46 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_28 Negara"), findTestData("Parameter/WIC Add").getValue(29, rowNum)): Text 'Indonesia' is set on object 'Object Repository/Parameter/WIC/Add/_28 Negara'
+
+2020-03-02 11:36:46 - [MESSAGE][PASSED] - Text 'Indonesia' is set on object 'Object Repository/Parameter/WIC/Add/_28 Negara'
+
+2020-03-02 11:36:46 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-03-02 11:36:47 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-03-02 11:36:47 - [TEST_STEP][PASSED] - sendKeys(findTestObject("Parameter/WIC/Add/_28 Negara"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_28 Negara'
+
+2020-03-02 11:36:48 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/Parameter/WIC/Add/_28 Negara'
+
+2020-03-02 11:36:48 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_29 Provinsi"), findTestData("Parameter/WIC Add").getValue(30, rowNum)): Text 'jkt' is set on object 'Object Repository/Parameter/WIC/Add/_29 Provinsi'
+
+2020-03-02 11:36:49 - [MESSAGE][PASSED] - Text 'jkt' is set on object 'Object Repository/Parameter/WIC/Add/_29 Provinsi'
+
+2020-03-02 11:36:49 - [TEST_STEP][PASSED] - setText(findTestObject("Parameter/WIC/Add/_30 catatan"), findTestData("Parameter/WIC Add").getValue(31, rowNum)): Text 'nope' is set on object 'Object Repository/Parameter/WIC/Add/_30 catatan'
+
+2020-03-02 11:36:49 - [MESSAGE][PASSED] - Text 'nope' is set on object 'Object Repository/Parameter/WIC/Add/_30 catatan'
+
+2020-03-02 11:36:49 - [TEST_STEP][PASSED] - click(findTestObject("Parameter/WIC/Button/save 2")): Object: 'Object Repository/Parameter/WIC/Button/save 2' is clicked on
+
+2020-03-02 11:36:50 - [MESSAGE][PASSED] - Object: 'Object Repository/Parameter/WIC/Button/save 2' is clicked on
+
+2020-03-02 11:36:50 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+2020-03-02 11:36:51 - [MESSAGE][PASSED] - Browser is closed
+
+2020-03-02 11:36:53 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/Parameter/WIC/Add' .
+
+2020-03-02 11:36:53 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/Parameter/WIC/Add' .
+[[ATTACHMENT|D:\\poject\\goaml2\\Katalon\\GoAML\\Reports\\20200302_113453\\WIC\\20200302_113453/videos\\test_1.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-03-02 11:35:02 - [TEST_SUITE][PASSED] - WIC: Test Cases/Parameter/WIC/Add]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

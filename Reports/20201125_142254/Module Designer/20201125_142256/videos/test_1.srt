@@ -1,0 +1,604 @@
+1
+00:00:00,867 --> 00:00:00,873
+1. openBrowser("http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx")
+
+2
+00:00:11,887 --> 00:00:11,890
+5. maximizeWindow()
+
+3
+00:00:14,100 --> 00:00:14,102
+9. setText(findTestObject("All/UserName"), "sysadmin")
+
+4
+00:00:15,222 --> 00:00:15,224
+13. setText(findTestObject("All/password"), "superuser")
+
+5
+00:00:16,017 --> 00:00:16,018
+17. click(findTestObject("All/Sign In"))
+
+6
+00:00:18,395 --> 00:00:18,397
+21. setText(findTestObject("All/filter"), "Data Model Designer")
+
+7
+00:00:21,379 --> 00:00:21,382
+25. delay(1)
+
+8
+00:00:22,432 --> 00:00:22,433
+29. click(findTestObject("All/View"))
+
+9
+00:00:22,868 --> 00:00:22,870
+33. delay(3)
+
+10
+00:00:25,873 --> 00:00:25,874
+37. click(findTestObject("All/New Record"))
+
+11
+00:00:26,878 --> 00:00:26,879
+41. delay(1)
+
+12
+00:00:27,881 --> 00:00:27,884
+45. for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer").getRowNumbers(), (rowNum++)])
+
+13
+00:00:31,555 --> 00:00:31,556
+1. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module name"), findTestData("System Parameter/Module Designer").getValue(1, rowNum))
+
+14
+00:00:32,350 --> 00:00:32,351
+5. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module label"), findTestData("System Parameter/Module Designer").getValue(2, rowNum))
+
+15
+00:00:33,039 --> 00:00:33,040
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module desc"), findTestData("System Parameter/Module Designer").getValue(3, rowNum))
+
+16
+00:00:33,714 --> 00:00:33,716
+13. if (findTestData("System Parameter/Module Designer").getValue(4, rowNum) == "true")
+
+17
+00:00:33,751 --> 00:00:33,752
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/add"))
+
+18
+00:00:34,390 --> 00:00:34,392
+17. if (findTestData("System Parameter/Module Designer").getValue(5, rowNum) == "true")
+
+19
+00:00:34,446 --> 00:00:34,447
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/edit"))
+
+20
+00:00:35,075 --> 00:00:35,077
+21. if (findTestData("System Parameter/Module Designer").getValue(6, rowNum) == "true")
+
+21
+00:00:35,129 --> 00:00:35,130
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/delete"))
+
+22
+00:00:35,729 --> 00:00:35,731
+25. if (findTestData("System Parameter/Module Designer").getValue(7, rowNum) == "true")
+
+23
+00:00:35,778 --> 00:00:35,779
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/view"))
+
+24
+00:00:36,390 --> 00:00:36,392
+29. if (findTestData("System Parameter/Module Designer").getValue(8, rowNum) == "true")
+
+25
+00:00:36,440 --> 00:00:36,442
+33. if (findTestData("System Parameter/Module Designer").getValue(9, rowNum) == "true")
+
+26
+00:00:36,594 --> 00:00:36,603
+37. if (findTestData("System Parameter/Module Designer").getValue(10, rowNum) == "true")
+
+27
+00:00:36,654 --> 00:00:36,657
+41. if (findTestData("System Parameter/Module Designer").getValue(11, rowNum) == "true")
+
+28
+00:00:36,764 --> 00:00:36,767
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/detail"))
+
+29
+00:00:37,745 --> 00:00:37,746
+45. if (findTestData("System Parameter/Module Designer").getValue(12, rowNum) == "true")
+
+30
+00:00:37,794 --> 00:00:37,801
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/designer"))
+
+31
+00:00:38,523 --> 00:00:38,524
+49. break
+
+32
+00:00:38,525 --> 00:00:38,527
+49. for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer 2").getRowNumbers(), (rowNum++)])
+
+33
+00:00:38,603 --> 00:00:38,604
+1. if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true")
+
+34
+00:00:38,733 --> 00:00:38,734
+1. delay(3)
+
+35
+00:00:41,738 --> 00:00:41,739
+5. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add"))
+
+36
+00:00:42,407 --> 00:00:42,409
+5. delay(3)
+
+37
+00:00:45,423 --> 00:00:45,424
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum))
+
+38
+00:00:46,107 --> 00:00:46,108
+13. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum))
+
+39
+00:00:46,841 --> 00:00:46,842
+17. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum))
+
+40
+00:00:47,597 --> 00:00:47,598
+21. if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true")
+
+41
+00:00:47,628 --> 00:00:47,629
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/4 Primary Key"))
+
+42
+00:00:48,182 --> 00:00:48,183
+25. if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true")
+
+43
+00:00:48,217 --> 00:00:48,220
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/5 Require"))
+
+44
+00:00:48,774 --> 00:00:48,775
+29. if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true")
+
+45
+00:00:48,829 --> 00:00:48,830
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/6 Unik"))
+
+46
+00:00:49,450 --> 00:00:49,451
+33. if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true")
+
+47
+00:00:49,483 --> 00:00:49,484
+37. if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true")
+
+48
+00:00:49,522 --> 00:00:49,524
+41. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum))
+
+49
+00:00:50,363 --> 00:00:50,364
+45. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum))
+
+50
+00:00:51,085 --> 00:00:51,085
+49. delay(1)
+
+51
+00:00:52,089 --> 00:00:52,090
+53. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER))
+
+52
+00:00:52,599 --> 00:00:52,600
+57. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum))
+
+53
+00:00:53,453 --> 00:00:53,454
+61. delay(1)
+
+54
+00:00:54,457 --> 00:00:54,458
+65. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER))
+
+55
+00:00:55,266 --> 00:00:55,267
+69. if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT")
+
+56
+00:00:55,529 --> 00:00:55,532
+73. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save"))
+
+57
+00:00:56,968 --> 00:00:56,970
+1. if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true")
+
+58
+00:00:57,132 --> 00:00:57,134
+1. delay(3)
+
+59
+00:01:00,173 --> 00:01:00,193
+5. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add"))
+
+60
+00:01:01,312 --> 00:01:01,313
+5. delay(3)
+
+61
+00:01:04,317 --> 00:01:04,318
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum))
+
+62
+00:01:04,908 --> 00:01:04,909
+13. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum))
+
+63
+00:01:05,661 --> 00:01:05,662
+17. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum))
+
+64
+00:01:06,374 --> 00:01:06,375
+21. if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true")
+
+65
+00:01:06,398 --> 00:01:06,398
+25. if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true")
+
+66
+00:01:06,430 --> 00:01:06,431
+29. if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true")
+
+67
+00:01:06,469 --> 00:01:06,470
+33. if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true")
+
+68
+00:01:06,499 --> 00:01:06,500
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View"))
+
+69
+00:01:07,388 --> 00:01:07,389
+37. if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true")
+
+70
+00:01:07,411 --> 00:01:07,412
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form"))
+
+71
+00:01:08,181 --> 00:01:08,181
+41. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum))
+
+72
+00:01:08,765 --> 00:01:08,766
+45. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum))
+
+73
+00:01:09,648 --> 00:01:09,649
+49. delay(1)
+
+74
+00:01:10,651 --> 00:01:10,652
+53. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER))
+
+75
+00:01:11,095 --> 00:01:11,095
+57. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum))
+
+76
+00:01:11,791 --> 00:01:11,792
+61. delay(1)
+
+77
+00:01:12,795 --> 00:01:12,796
+65. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER))
+
+78
+00:01:13,283 --> 00:01:13,283
+69. if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT")
+
+79
+00:01:13,445 --> 00:01:13,446
+4. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum))
+
+80
+00:01:14,225 --> 00:01:14,226
+73. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save"))
+
+81
+00:01:14,786 --> 00:01:14,787
+1. if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true")
+
+82
+00:01:14,810 --> 00:01:14,811
+1. delay(3)
+
+83
+00:01:17,817 --> 00:01:17,818
+5. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add"))
+
+84
+00:01:18,391 --> 00:01:18,392
+5. delay(3)
+
+85
+00:01:21,395 --> 00:01:21,396
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum))
+
+86
+00:01:22,114 --> 00:01:22,115
+13. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum))
+
+87
+00:01:22,861 --> 00:01:22,862
+17. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum))
+
+88
+00:01:23,481 --> 00:01:23,482
+21. if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true")
+
+89
+00:01:23,500 --> 00:01:23,501
+25. if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true")
+
+90
+00:01:23,526 --> 00:01:23,527
+29. if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true")
+
+91
+00:01:23,564 --> 00:01:23,565
+33. if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true")
+
+92
+00:01:23,590 --> 00:01:23,591
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View"))
+
+93
+00:01:24,185 --> 00:01:24,186
+37. if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true")
+
+94
+00:01:24,207 --> 00:01:24,207
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form"))
+
+95
+00:01:24,781 --> 00:01:24,782
+41. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum))
+
+96
+00:01:25,330 --> 00:01:25,331
+45. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum))
+
+97
+00:01:26,033 --> 00:01:26,034
+49. delay(1)
+
+98
+00:01:27,036 --> 00:01:27,036
+53. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER))
+
+99
+00:01:27,506 --> 00:01:27,507
+57. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum))
+
+100
+00:01:28,136 --> 00:01:28,137
+61. delay(1)
+
+101
+00:01:29,140 --> 00:01:29,140
+65. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER))
+
+102
+00:01:29,582 --> 00:01:29,583
+69. if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT")
+
+103
+00:01:29,720 --> 00:01:29,721
+73. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save"))
+
+104
+00:01:30,306 --> 00:01:30,307
+1. if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true")
+
+105
+00:01:30,327 --> 00:01:30,330
+1. delay(3)
+
+106
+00:01:33,335 --> 00:01:33,336
+5. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add"))
+
+107
+00:01:33,840 --> 00:01:33,840
+5. delay(3)
+
+108
+00:01:36,844 --> 00:01:36,845
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum))
+
+109
+00:01:37,510 --> 00:01:37,512
+13. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum))
+
+110
+00:01:38,079 --> 00:01:38,080
+17. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum))
+
+111
+00:01:38,692 --> 00:01:38,692
+21. if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true")
+
+112
+00:01:38,714 --> 00:01:38,715
+25. if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true")
+
+113
+00:01:38,735 --> 00:01:38,736
+29. if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true")
+
+114
+00:01:38,757 --> 00:01:38,759
+33. if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true")
+
+115
+00:01:38,778 --> 00:01:38,781
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View"))
+
+116
+00:01:39,332 --> 00:01:39,332
+37. if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true")
+
+117
+00:01:39,354 --> 00:01:39,355
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form"))
+
+118
+00:01:39,844 --> 00:01:39,845
+41. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum))
+
+119
+00:01:40,378 --> 00:01:40,379
+45. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum))
+
+120
+00:01:41,065 --> 00:01:41,066
+49. delay(1)
+
+121
+00:01:42,069 --> 00:01:42,070
+53. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER))
+
+122
+00:01:42,557 --> 00:01:42,558
+57. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum))
+
+123
+00:01:43,240 --> 00:01:43,241
+61. delay(1)
+
+124
+00:01:44,244 --> 00:01:44,245
+65. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER))
+
+125
+00:01:44,775 --> 00:01:44,776
+69. if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT")
+
+126
+00:01:44,870 --> 00:01:44,871
+4. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum))
+
+127
+00:01:45,619 --> 00:01:45,619
+73. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save"))
+
+128
+00:01:46,146 --> 00:01:46,147
+1. if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true")
+
+129
+00:01:46,171 --> 00:01:46,172
+1. delay(3)
+
+130
+00:01:49,174 --> 00:01:49,175
+5. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add"))
+
+131
+00:01:49,672 --> 00:01:49,673
+5. delay(3)
+
+132
+00:01:53,508 --> 00:01:53,509
+9. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum))
+
+133
+00:01:54,131 --> 00:01:54,131
+13. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum))
+
+134
+00:01:54,771 --> 00:01:54,772
+17. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum))
+
+135
+00:01:55,438 --> 00:01:55,438
+21. if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true")
+
+136
+00:01:55,455 --> 00:01:55,456
+25. if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true")
+
+137
+00:01:55,480 --> 00:01:55,480
+29. if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true")
+
+138
+00:01:55,495 --> 00:01:55,495
+33. if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true")
+
+139
+00:01:55,512 --> 00:01:55,513
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View"))
+
+140
+00:01:56,040 --> 00:01:56,041
+37. if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true")
+
+141
+00:01:56,062 --> 00:01:56,063
+1. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form"))
+
+142
+00:01:56,611 --> 00:01:56,611
+41. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum))
+
+143
+00:01:57,209 --> 00:01:57,210
+45. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum))
+
+144
+00:01:57,920 --> 00:01:57,921
+49. delay(1)
+
+145
+00:01:58,924 --> 00:01:58,925
+53. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER))
+
+146
+00:01:59,376 --> 00:01:59,377
+57. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum))
+
+147
+00:02:00,045 --> 00:02:00,045
+61. delay(1)
+
+148
+00:02:01,047 --> 00:02:01,047
+65. sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER))
+
+149
+00:02:01,498 --> 00:02:01,498
+69. if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT")
+
+150
+00:02:01,580 --> 00:02:01,580
+4. setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum))
+
+151
+00:02:02,562 --> 00:02:02,563
+73. click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save"))
+

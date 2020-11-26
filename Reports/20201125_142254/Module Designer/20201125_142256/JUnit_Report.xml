@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Module Designer" time="127.935" tests="1" failures="0" errors="0">
+   <testsuite name="Module Designer" tests="1" failures="0" errors="0" time="127.935" timestamp="2020-11-25 14:23:09" hostname="user - NDS-LPT-0080" id="Test Suites/Module Designer">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_142254\\Module Designer\\20201125_142256"/>
+         <property name="logFiles" value="D:\\poject\\GoAML Product\\Katalon\\GoAML\\Reports\\20201125_142254\\Module Designer\\20201125_142256\\execution0.log"/>
+         <property name="attachments" value="D:\poject\GoAML Product\Katalon\GoAML\Reports\20201125_142254\Module Designer\20201125_142256/videos\test_1.avi"/>
+         <property name="hostName" value="user - NDS-LPT-0080"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="7.2.1.1"/>
+         <property name="browser" value="Chrome 87.0.4280.66"/>
+         <property name="hostAddress" value="192.168.43.60"/>
+         <property name="sessionId" value="bd6f9552eb193f35d80fa7b004a8dd36"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/System Parameter/Data Model Designer" time="125.702" classname="Test Cases/System Parameter/Data Model Designer" status="PASSED">
+         <system-out><![CDATA[2020-11-25 14:23:10 - [TEST_CASE][PASSED] - Test Cases/System Parameter/Data Model Designer: Test Cases/System Parameter/Data Model Designer
+
+2020-11-25 14:23:11 - [TEST_STEP][PASSED] - openBrowser("http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx"): Browser is opened with url: 'http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx'
+
+2020-11-25 14:23:12 - [MESSAGE][INFO] - Starting 'Chrome' driver
+
+2020-11-25 14:23:12 - [MESSAGE][INFO] - User set preference: ['property', '']
+
+2020-11-25 14:23:12 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+2020-11-25 14:23:22 - [MESSAGE][PASSED] - Browser is opened with url: 'http://goaml.southeastasia.cloudapp.azure.com/goaml/Default.aspx'
+
+2020-11-25 14:23:22 - [TEST_STEP][PASSED] - maximizeWindow(): Current window maximized
+
+2020-11-25 14:23:24 - [MESSAGE][PASSED] - Current window maximized
+
+2020-11-25 14:23:24 - [TEST_STEP][PASSED] - setText(findTestObject("All/UserName"), "sysadmin"): Text 'sysadmin' is set on object 'Object Repository/All/UserName'
+
+2020-11-25 14:23:25 - [MESSAGE][PASSED] - Text 'sysadmin' is set on object 'Object Repository/All/UserName'
+
+2020-11-25 14:23:25 - [TEST_STEP][PASSED] - setText(findTestObject("All/password"), "superuser"): Text 'superuser' is set on object 'Object Repository/All/password'
+
+2020-11-25 14:23:26 - [MESSAGE][PASSED] - Text 'superuser' is set on object 'Object Repository/All/password'
+
+2020-11-25 14:23:26 - [TEST_STEP][PASSED] - click(findTestObject("All/Sign In")): Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-11-25 14:23:28 - [MESSAGE][PASSED] - Object: 'Object Repository/All/Sign In' is clicked on
+
+2020-11-25 14:23:28 - [TEST_STEP][PASSED] - setText(findTestObject("All/filter"), "Data Model Designer"): Text 'Data Model Designer' is set on object 'Object Repository/All/filter'
+
+2020-11-25 14:23:31 - [MESSAGE][PASSED] - Text 'Data Model Designer' is set on object 'Object Repository/All/filter'
+
+2020-11-25 14:23:31 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:23:32 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:23:32 - [TEST_STEP][PASSED] - click(findTestObject("All/View")): Object: 'Object Repository/All/View' is clicked on
+
+2020-11-25 14:23:33 - [MESSAGE][PASSED] - Object: 'Object Repository/All/View' is clicked on
+
+2020-11-25 14:23:33 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:23:36 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:23:36 - [TEST_STEP][PASSED] - click(findTestObject("All/New Record")): Object: 'Object Repository/All/New Record' is clicked on
+
+2020-11-25 14:23:37 - [MESSAGE][PASSED] - Object: 'Object Repository/All/New Record' is clicked on
+
+2020-11-25 14:23:37 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:23:38 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:23:38 - [TEST_STEP][PASSED] - for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer").getRowNumbers(), (rowNum++)]): null
+
+2020-11-25 14:23:42 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module name"), findTestData("System Parameter/Module Designer").getValue(1, rowNum)): Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module name'
+
+2020-11-25 14:23:42 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module name'
+
+2020-11-25 14:23:42 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module label"), findTestData("System Parameter/Module Designer").getValue(2, rowNum)): Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module label'
+
+2020-11-25 14:23:43 - [MESSAGE][PASSED] - Text 'User' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module label'
+
+2020-11-25 14:23:43 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/module desc"), findTestData("System Parameter/Module Designer").getValue(3, rowNum)): Text 'User Tes' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module desc'
+
+2020-11-25 14:23:44 - [MESSAGE][PASSED] - Text 'User Tes' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/module desc'
+
+2020-11-25 14:23:44 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(4, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:23:44 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:23:44 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/add' is clicked on
+
+2020-11-25 14:23:44 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(5, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:23:44 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/edit")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:23:45 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/edit' is clicked on
+
+2020-11-25 14:23:45 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(6, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:23:45 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/delete")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:23:46 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/delete' is clicked on
+
+2020-11-25 14:23:46 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(7, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:23:46 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/view")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:23:46 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/view' is clicked on
+
+2020-11-25 14:23:46 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(8, rowNum) == "true"): null
+
+2020-11-25 14:23:46 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(9, rowNum) == "true"): null
+
+2020-11-25 14:23:47 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(10, rowNum) == "true"): null
+
+2020-11-25 14:23:47 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(11, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:23:47 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/detail")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:23:48 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/detail' is clicked on
+
+2020-11-25 14:23:48 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer").getValue(12, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:23:48 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/designer")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:23:49 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/designer' is clicked on
+
+2020-11-25 14:23:49 - [TEST_STEP][PASSED] - break: null
+
+2020-11-25 14:23:49 - [TEST_STEP][PASSED] - for ([rowNum = 1, rowNum <= findTestData("System Parameter/Module Designer 2").getRowNumbers(), (rowNum++)]): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:23:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:23:49 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:23:52 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:23:52 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:23:52 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:23:52 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:23:55 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:23:55 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:23:56 - [MESSAGE][PASSED] - Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:23:56 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:23:57 - [MESSAGE][PASSED] - Text 'NOID' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:23:57 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '1' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:23:58 - [MESSAGE][PASSED] - Text '1' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:23:58 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:23:58 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/4 Primary Key")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:23:58 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/4 Primary Key' is clicked on
+
+2020-11-25 14:23:58 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:23:58 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/5 Require")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:23:59 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/5 Require' is clicked on
+
+2020-11-25 14:23:59 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:23:59 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/6 Unik")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:23:59 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/6 Unik' is clicked on
+
+2020-11-25 14:23:59 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): null
+
+2020-11-25 14:24:00 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): null
+
+2020-11-25 14:24:00 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text 'NOPE' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:00 - [MESSAGE][PASSED] - Text 'NOPE' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:00 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'NumberField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:01 - [MESSAGE][PASSED] - Text 'NumberField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:01 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:02 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:02 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:03 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:03 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'BIG IDENTITY' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:03 - [MESSAGE][PASSED] - Text 'BIG IDENTITY' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:03 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:04 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:04 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:05 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:05 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:24:06 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:07 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:07 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:07 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:10 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:10 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:11 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:11 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:14 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:14 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'Nama' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:15 - [MESSAGE][PASSED] - Text 'Nama' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:15 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'Nama' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:16 - [MESSAGE][PASSED] - Text 'Nama' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:16 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '2' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:16 - [MESSAGE][PASSED] - Text '2' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:16 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): null
+
+2020-11-25 14:24:16 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): null
+
+2020-11-25 14:24:16 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): null
+
+2020-11-25 14:24:17 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:17 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:17 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:17 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:17 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:18 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:18 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:19 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:19 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:20 - [MESSAGE][PASSED] - Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:20 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:21 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:21 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:21 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:21 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:22 - [MESSAGE][PASSED] - Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:22 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:23 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:23 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "REAL"): null
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "MONEY"): null
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "VARCHAR"): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:23 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum)): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:24 - [MESSAGE][PASSED] - Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:24 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:25 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:25 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:25 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:28 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:28 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:28 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:28 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:31 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:31 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'TempatTGL' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:32 - [MESSAGE][PASSED] - Text 'TempatTGL' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:32 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'Tempat Tanggal Lahir' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:33 - [MESSAGE][PASSED] - Text 'Tempat Tanggal Lahir' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:33 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '3' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:34 - [MESSAGE][PASSED] - Text '3' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): null
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): null
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): null
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:34 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:34 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:35 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:35 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:35 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:35 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:36 - [MESSAGE][PASSED] - Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:36 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:37 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:37 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:38 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:38 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'DATETIME' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:38 - [MESSAGE][PASSED] - Text 'DATETIME' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:38 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:39 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:39 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:40 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:40 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:24:40 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:40 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:40 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:40 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:43 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:43 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:44 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:44 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:47 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:47 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'NoHP' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:48 - [MESSAGE][PASSED] - Text 'NoHP' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:24:48 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'No HP' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:48 - [MESSAGE][PASSED] - Text 'No HP' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:24:48 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '4' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:49 - [MESSAGE][PASSED] - Text '4' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): null
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): null
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): null
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:49 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:49 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:50 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:24:50 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:50 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:24:50 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:51 - [MESSAGE][PASSED] - Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:51 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:52 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:52 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:53 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:24:53 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:53 - [MESSAGE][PASSED] - Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:53 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:24:54 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:24:54 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:55 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:24:55 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:24:55 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "REAL"): null
+
+2020-11-25 14:24:55 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "MONEY"): null
+
+2020-11-25 14:24:55 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "VARCHAR"): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:55 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum)): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:56 - [MESSAGE][PASSED] - Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:24:56 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:56 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:24:56 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(1, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:24:56 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:24:59 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:24:59 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/1 add")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:25:00 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/1 add' is clicked on
+
+2020-11-25 14:25:00 - [TEST_STEP][PASSED] - delay(3): Delayed 3 second(s)
+
+2020-11-25 14:25:04 - [MESSAGE][PASSED] - Delayed 3 second(s)
+
+2020-11-25 14:25:04 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2 Field Name"), findTestData("System Parameter/Module Designer 2").getValue(2, rowNum)): Text 'JenisKelamin' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:25:04 - [MESSAGE][PASSED] - Text 'JenisKelamin' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2 Field Name'
+
+2020-11-25 14:25:04 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/2__ Field Label"), findTestData("System Parameter/Module Designer 2").getValue(3, rowNum)): Text 'Jenis Kelamin' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:25:05 - [MESSAGE][PASSED] - Text 'Jenis Kelamin' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/2__ Field Label'
+
+2020-11-25 14:25:05 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/3 Squence"), findTestData("System Parameter/Module Designer 2").getValue(4, rowNum)): Text '5' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:25:05 - [MESSAGE][PASSED] - Text '5' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/3 Squence'
+
+2020-11-25 14:25:05 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(5, rowNum) == "true"): null
+
+2020-11-25 14:25:05 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(6, rowNum) == "true"): null
+
+2020-11-25 14:25:06 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(7, rowNum) == "true"): null
+
+2020-11-25 14:25:06 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(8, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:25:06 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/7 Show In View")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:25:06 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/7 Show In View' is clicked on
+
+2020-11-25 14:25:06 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(9, rowNum) == "true"): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:25:06 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/8 Show In Form")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:25:07 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/8 Show In Form' is clicked on
+
+2020-11-25 14:25:07 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/9 Default Value"), findTestData("System Parameter/Module Designer 2").getValue(10, rowNum)): Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:25:07 - [MESSAGE][PASSED] - Text '' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/9 Default Value'
+
+2020-11-25 14:25:07 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), findTestData("System Parameter/Module Designer 2").getValue(11, rowNum)): Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:25:08 - [MESSAGE][PASSED] - Text 'TextField' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:25:08 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:25:09 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:25:09 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:25:09 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_10 Ext Type'
+
+2020-11-25 14:25:09 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), findTestData("System Parameter/Module Designer 2").getValue(12, rowNum)): Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:25:10 - [MESSAGE][PASSED] - Text 'VARCHAR' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:25:10 - [TEST_STEP][PASSED] - delay(1): Delayed 1 second(s)
+
+2020-11-25 14:25:11 - [MESSAGE][PASSED] - Delayed 1 second(s)
+
+2020-11-25 14:25:11 - [TEST_STEP][PASSED] - sendKeys(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_11 Field Type"), Keys.chord(ENTER)): Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:25:12 - [MESSAGE][PASSED] - Keys 'ENTER + ' sent to object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_11 Field Type'
+
+2020-11-25 14:25:12 - [TEST_STEP][PASSED] - if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "FLOAT"): null
+
+2020-11-25 14:25:12 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "REAL"): null
+
+2020-11-25 14:25:12 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "MONEY"): null
+
+2020-11-25 14:25:12 - [TEST_STEP][PASSED] - else if (findTestData("System Parameter/Module Designer 2").getValue(12, rowNum) == "VARCHAR"): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:25:12 - [TEST_STEP][PASSED] - setText(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_12 Field Size"), findTestData("System Parameter/Module Designer 2").getValue(13, rowNum)): Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:25:13 - [MESSAGE][PASSED] - Text '30' is set on object 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_12 Field Size'
+
+2020-11-25 14:25:13 - [TEST_STEP][PASSED] - click(findTestObject("System Parameter/Model Designer/Data Model Designer/2/_13 Save")): Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:25:13 - [MESSAGE][PASSED] - Object: 'Object Repository/System Parameter/Model Designer/Data Model Designer/2/_13 Save' is clicked on
+
+2020-11-25 14:25:15 - [TEST_STEP][PASSED] - Video: Video recording for test case 'Test Cases/System Parameter/Data Model Designer' .
+
+2020-11-25 14:25:15 - [MESSAGE][INFO] - Video recording for test case 'Test Cases/System Parameter/Data Model Designer' .
+[[ATTACHMENT|D:\poject\GoAML Product\Katalon\GoAML\Reports\20201125_142254\Module Designer\20201125_142256/videos\test_1.avi]]]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2020-11-25 14:23:09 - [TEST_SUITE][PASSED] - Module Designer: Test Cases/System Parameter/Data Model Designer]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
